@@ -1,21 +1,83 @@
-function renderGallery(dataArray) {
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Sense Levelup | 审美操盘手实验室</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <header class="py-12 text-center border-b border-gray-100">
+        <h1 class="font-serif text-5xl mb-4 tracking-tight">Art Sense Levelup.</h1>
+        <p class="text-gray-400 uppercase tracking-[0.2em] text-xs">A definitive gallery of international design and visual excellence</p>
+    </header>
+
+    <nav class="flex justify-center space-x-12 py-8 text-sm font-bold uppercase tracking-widest border-b border-gray-50 mb-12">
+        <a href="#" class="border-b-2 border-black pb-1">Discover</a>
+        <a href="#" class="text-gray-300 hover:text-black transition-colors">Fashion</a>
+        <a href="#" class="text-gray-300 hover:text-black transition-colors">Layout</a>
+        <a href="#" class="text-gray-300 hover:text-black transition-colors">Home Decor</a>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 mb-24">
+        <div id="gallery" class="gallery-grid">
+            <div class="col-span-full text-center py-24 text-gray-300">正在调取全球审美数据...</div>
+        </div>
+    </main>
+
+    <script>
+        async function init() {
+            try {
+                // 1. 去货架取货（读取 JSON 数据）
+                const response = await fetch('aesthetic_data.json');
+                const data = await response.json();
+                
+                if (data && data.length > 0) {
+                    renderGallery(data);
+                } else {
+                    document.getElementById('gallery').innerHTML = '<p class="col-span-full text-center text-gray-400">货架空了，请运行 Actions 进货。</p>';
+                }
+            } catch (error) {
+                console.error("加载数据失败:", error);
+            }
+        }
+
+        function renderGallery(dataArray) {
             const gallery = document.getElementById('gallery');
-            gallery.innerHTML = '';
-            
-            // 确保渲染全部内容
-            dataArray.forEach((item, index) => {
+            gallery.innerHTML = ''; // 清空之前的加载提示
+
+            // 2. 核心循环：把 24 条数据逐一变成漂亮的卡片
+            dataArray.forEach((item) => {
                 const card = `
-                    <div class="group cursor-pointer flex flex-col items-center text-center px-4 py-8 rounded-lg hover:bg-gray-50/50" onclick="openDrawer('${item.id}')">
-                        <div class="w-full aspect-[3/4] overflow-hidden rounded bg-gray-100 relative">
-                            <img src="${item.imageUrl}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="group cursor-pointer flex flex-col items-center text-center px-4 py-8 rounded-lg hover:bg-gray-50/50 transition-all duration-300">
+                        <div class="w-full aspect-[3/4] overflow-hidden rounded bg-gray-100 relative shadow-sm">
+                            <img src="${item.imageUrl}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         </div>
-                        <div class="pt-6">
-                            <div class="text-[11px] font-serif font-bold text-gray-500 uppercase tracking-widest mb-2 italic">${item.category}</div>
-                            <h3 class="font-serif text-2xl font-bold text-black mb-2 leading-tight">${item.title}</h3>
-                            <p class="text-sm font-sans font-medium text-gray-500 opacity-70">${item.brief}</p>
+                        <div class="pt-8">
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-[0.3em] mb-3 block italic">${item.category}</span>
+                            <h3 class="font-serif text-2xl font-bold text-black mb-3 leading-tight group-hover:text-gray-600 transition-colors">${item.title}</h3>
+                            <p class="text-sm font-medium text-gray-400 leading-relaxed max-w-[240px] mx-auto">${item.brief}</p>
                         </div>
                     </div>
                 `;
+                // 使用 insertAdjacentHTML 确保 24 张图依次排队上架
                 gallery.insertAdjacentHTML('beforeend', card);
             });
         }
+
+        // 启动系统
+        init();
+    </script>
+</body>
+</html>
