@@ -9,12 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        // 2. 重新配置 Tailind 字体映射，确保 serif 调用高级衬线体
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
                         serif: ['"Playfair Display"', 'serif'],
                     }
                 }
@@ -22,16 +21,19 @@
         }
     </script>
     <style>
+        /* 侧滑面板动画逻辑 */
         .drawer-open { transform: translateX(0%); }
         .drawer-closed { transform: translateX(100%); }
         .fade-in { opacity: 1; pointer-events: auto; }
         .fade-out { opacity: 0; pointer-events: none; }
-        /* 确保导航栏分类全小写且带有 Playfair Display 的斜体和高级感 */
         .nav-item { font-family: 'Playfair Display', serif; font-style: italic; color: #b0b0b0; text-transform: lowercase; }
         .nav-active { color: white !important; font-weight: bold; border-bottom: 2px solid white; }
+        /* 强制主标题使用衬线体，达到海报效果 */
+        h1, .font-serif-title { font-family: 'Playfair Display', serif !important; }
     </style>
 </head>
 <body class="bg-[#fafafa] text-[#191919] antialiased overflow-x-hidden font-sans">
+
     <nav class="bg-black text-white px-10 py-6 flex justify-between items-center sticky top-0 z-40 border-b border-white/10">
         <div class="text-3xl font-serif font-bold tracking-tight">Art Sense Levelup<span class="text-white/50 ml-1">.</span></div>
         <div class="hidden md:flex space-x-10 text-sm font-semibold">
@@ -40,27 +42,58 @@
             <a href="#" onclick="filterData('页面排版', this)" class="nav-item hover:text-white transition">layout</a>
             <a href="#" onclick="filterData('家居装饰', this)" class="nav-item hover:text-white transition">home decor</a>
         </div>
-        <button class="bg-transparent hover:bg-white hover:text-black border border-white text-white px-6 py-2 rounded-full text-xs font-bold transition uppercase tracking-widest">Subscribe</button>
+        <button class="bg-transparent border border-white text-white px-6 py-2 rounded-full text-xs font-bold transition uppercase tracking-widest hover:bg-white hover:text-black">Subscribe</button>
     </nav>
 
-    <header class="w-full min-h-[60vh] bg-black relative flex items-center justify-center border-b border-gray-200">
-        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2000&q=80" class="absolute inset-0 w-full h-full object-cover opacity-60">
+    <header class="w-full h-screen bg-black relative flex items-center justify-center">
+        <img src="https://i0.wp.com/images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2000&q=80" class="absolute inset-0 w-full h-full object-cover opacity-60">
         <div class="relative z-10 text-center text-white px-8">
             <div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Global Visual Excellence Gallery</div>
-            <h1 class="text-6xl md:text-7xl font-serif font-bold mb-6 leading-[1.1]">
-                审美进阶·每日热榜
+            <h1 class="text-7xl md:text-9xl font-bold mb-8 leading-tight tracking-tighter">
+                Art Sense <br> Levelup<span class="text-white/30 ml-2">.</span>
             </h1>
-            <p class="text-gray-300 font-sans max-w-xl mx-auto text-sm md:text-base leading-relaxed opacity-70">
-                由 Gemini AI 全自动寻猎全球顶级设计案例，每早 08:00 准时补货，用专业视角重塑你的视觉基因。
+            <p class="text-gray-300 max-w-2xl mx-auto text-base md:text-lg leading-relaxed opacity-80 font-medium">
+                A definitive gallery of international design and visual excellence: an epic love story with design spanning fashion, layout, and home decor.
             </p>
         </div>
     </header>
 
+    <div class="max-w-7xl mx-auto px-8 py-12 flex justify-center space-x-12 border-b border-gray-100 text-sm font-bold">
+        <button class="text-black font-serif italic text-2xl border-b-2 border-black pb-1">今日热榜精选</button>
+        <button class="text-gray-400 hover:text-black transition font-serif text-2xl">我的收藏库</button>
+    </div>
+
     <main class="max-w-7xl mx-auto px-8 py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12" id="gallery">
-            <p class="text-gray-500 col-span-full text-center py-20 text-lg">正在为你的审美开路...</p>
+            <p class="text-gray-500 col-span-full text-center py-20 text-lg italic">正在通过 AI 寻猎全球审美标杆...</p>
         </div>
     </main>
+
+    <div id="drawerOverlay" class="fixed inset-0 bg-black/70 z-50 fade-out transition-opacity duration-400" onclick="closeDrawer()"></div>
+    <div id="detailDrawer" class="fixed top-0 right-0 h-full w-full md:w-[600px] lg:w-[800px] bg-white z-50 shadow-2xl drawer-closed transition-transform duration-400 ease-in-out flex flex-col md:flex-row border-l border-gray-100">
+        <div class="w-full md:w-1/2 h-64 md:h-full bg-black flex-shrink-0 relative">
+            <img id="drawerImg" src="" class="w-full h-full object-cover">
+        </div>
+        <div class="w-full md:w-1/2 h-full overflow-y-auto p-10 flex flex-col relative">
+            <button onclick="closeDrawer()" class="absolute top-8 right-8 p-3 bg-gray-100 hover:bg-gray-200 rounded-full transition">
+                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <div class="mb-10 mt-6">
+                <span id="drawerCat" class="text-xs font-serif font-bold text-gray-400 uppercase tracking-widest mb-3 block italic"></span>
+                <h2 id="drawerTitle" class="text-4xl font-serif font-bold leading-tight text-black"></h2>
+                <p id="drawerBrief" class="text-xl text-gray-500 mt-4 font-medium italic font-serif opacity-80"></p>
+            </div>
+            <hr class="border-gray-200 mb-10">
+            <div class="mb-10 flex-grow">
+                <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">导师级元素拆解</h3>
+                <div id="drawerAnalysis" class="text-gray-900 text-lg leading-relaxed space-y-6 font-medium"></div>
+            </div>
+            <div id="drawerSuggestionBox" class="mb-10 bg-[#f9fafb] p-6 rounded border border-gray-200">
+                <h3 class="text-sm font-bold text-blue-900 mb-3 uppercase tracking-tighter">商业建议</h3>
+                <p id="drawerSuggestion" class="text-sm text-gray-700 leading-relaxed font-medium"></p>
+            </div>
+        </div>
+    </div>
 
     <script>
         let allData = [];
@@ -74,31 +107,44 @@
         function renderGallery(dataArray) {
             const gallery = document.getElementById('gallery');
             gallery.innerHTML = '';
-            if(dataArray.length === 0) {
-                gallery.innerHTML = '<p class="text-gray-500 col-span-full text-center py-24 text-xl">这里目前空空如也~</p>';
-                return;
-            }
             dataArray.forEach(item => {
                 const card = `
-                    <div class="group cursor-pointer flex flex-col items-center text-center px-4 py-8 rounded-lg hover:bg-gray-50/50">
+                    <div class="group cursor-pointer flex flex-col items-center text-center px-4 py-8 rounded-lg hover:bg-gray-50/50" onclick="openDrawer('${item.id}')">
                         <div class="w-full aspect-[1/1] overflow-hidden rounded bg-gray-100 relative">
-                            <img src="${item.imageUrl}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="${item.imageUrl}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="pt-6">
-                            <div class="text-[11px] font-serif font-bold text-gray-500 uppercase tracking-widest mb-2 italic">
-                                ${item.category}
-                            </div>
-                            <h3 class="font-serif text-2xl font-bold text-black mb-2 group-hover:underline decoration-1 underline-offset-4 leading-tight">
-                                ${item.title}
-                            </div>
-                            <p class="text-sm font-sans font-medium text-gray-500 mt-1 opacity-70 leading-relaxed">
-                                ${item.brief}
-                            </p>
+                            <div class="text-[11px] font-serif font-bold text-gray-500 uppercase tracking-widest mb-2 italic">${item.category}</div>
+                            <h3 class="font-serif text-2xl font-bold text-black mb-2 group-hover:underline decoration-1 underline-offset-4">${item.title}</h3>
+                            <p class="text-sm font-sans font-medium text-gray-500 opacity-70">${item.brief}</p>
                         </div>
                     </div>
                 `;
                 gallery.innerHTML += card;
             });
+        }
+
+        const drawer = document.getElementById('detailDrawer');
+        const overlay = document.getElementById('drawerOverlay');
+
+        function openDrawer(itemId) {
+            const item = allData.find(i => i.id === itemId);
+            document.getElementById('drawerImg').src = item.imageUrl;
+            document.getElementById('drawerCat').innerText = item.category;
+            document.getElementById('drawerTitle').innerText = item.title;
+            document.getElementById('drawerBrief').innerText = item.brief;
+            document.getElementById('drawerAnalysis').innerHTML = item.detailedAnalysis.split('<br>').map(p => `<p class="mb-4">${p}</p>`).join('');
+            document.getElementById('drawerSuggestion').innerText = item.suggestion;
+            
+            drawer.classList.replace('drawer-closed', 'drawer-open');
+            overlay.classList.replace('fade-out', 'fade-in');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            drawer.classList.replace('drawer-open', 'drawer-closed');
+            overlay.classList.replace('fade-in', 'fade-out');
+            document.body.style.overflow = 'auto';
         }
 
         function filterData(category, clickedElement) {
