@@ -1,26 +1,74 @@
 [
-    { "id": "f1", "category": "女性穿搭", "imageUrl": "https://images.unsplash.com/photo-1550614000-4b95d4662d59?auto=format&fit=crop&w=800&q=80", "title": "法式极简黑白", "brief": "克制的高级感", "detailedAnalysis": "1. 色彩搭配：绝对的黑白分明，没有任何中间色干扰，呈现极简的现代感。<br>2. 剪裁对比：硬挺的西装外套与柔软的内搭形成材质反差。<br>3. 留白美学：颈部和手腕的适度露肤，打破了深色套装的沉闷。", "suggestion": "全身黑白时，一定要注意衣服的剪裁和垂坠感，否则容易像工作服。" },
-    { "id": "f2", "category": "女性穿搭", "imageUrl": "https://images.unsplash.com/photo-1434389678232-04e21dca1ef3?auto=format&fit=crop&w=800&q=80", "title": "低饱和老钱风", "brief": "同色系的降维打击", "detailedAnalysis": "1. 色调统一：燕麦、驼色等低饱和色彩，自带静谧感。<br>2. 材质叠加：羊绒与真丝的碰撞，用光泽度区分层次。<br>3. 视觉延伸：H型长款大衣拉长了整体身形比例。", "suggestion": "同色系穿搭必须依靠材质的薄厚、光泽度差异来制造层次。" },
-    { "id": "f3", "category": "女性穿搭", "imageUrl": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80", "title": "美式复古高街", "brief": "高饱和度的视觉冲击", "detailedAnalysis": "1. 撞色艺术：复古红与单宁蓝的经典对比，活力十足。<br>2. 比例重塑：短上衣+高腰裤，人为制造上短下长的黄金比例。<br>3. 配饰锚点：复古皮带成为了视觉中心点。", "suggestion": "亮色尽量远离面部，放在下半身或作为配饰，更不挑肤色。" },
-    { "id": "f4", "category": "女性穿搭", "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80", "title": "慵懒运动混搭", "brief": "毫不费力的时髦感", "detailedAnalysis": "1. 风格碰撞：运动裤的休闲与精致风衣的正式感形成反差。<br>2. 松弛感：宽松的廓形设计模糊了身材曲线，强调舒适。<br>3. 色彩呼应：鞋子与内搭的色彩相呼应，保持整体感。", "suggestion": "混搭时，全身上下至少要有两个单品风格是一致的，避免过于凌乱。" },
-    { "id": "f5", "category": "女性穿搭", "imageUrl": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80", "title": "波西米亚度假风", "brief": "繁复的浪漫主义", "detailedAnalysis": "1. 图案视觉：大面积的碎花或图腾，带来强烈的异域风情。<br>2. 材质轻盈：雪纺或棉麻面料，随风飘动增加动态美。<br>3. 配饰叠加：多层次的项链和手串丰富了细节。", "suggestion": "衣服图案繁复时，鞋包配饰必须选择纯色，做到繁简结合。" },
-    { "id": "f6", "category": "女性穿搭", "imageUrl": "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&w=800&q=80", "title": "干练通勤大女主", "brief": "气场全开的职场范", "detailedAnalysis": "1. 力量感：垫肩西装增强了肩部线条，提升气场。<br>2. 色彩克制：灰、蓝等冷色调，传递专业与冷静。<br>3. 线条利落：裤装的直线条修饰腿型，显得干脆利落。", "suggestion": "职场穿搭投资一件剪裁精良的西装外套，能提升所有内搭的质感。" },
-    { "id": "f7", "category": "女性穿搭", "imageUrl": "https://images.unsplash.com/photo-1485230895905-efd5b757fb45?auto=format&fit=crop&w=800&q=80", "title": "日系透明感叠穿", "brief": "层次丰富的氧气感", "detailedAnalysis": "1. 色彩通透：大面积浅色系，明度高纯度低，干净清爽。<br>2. 层次叠加：吊带、罩衫、半裙的叠穿，层次分明却不臃肿。<br>3. 呼吸感：领口和脚踝的适度留白，增加了轻盈感。", "suggestion": "叠穿时要注意内外衣物的长短错落，露出边缘线条是关键。" },
-    { "id": "f8", "category": "女性穿搭", "imageUrl": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80", "title": "暗黑先锋机能风", "brief": "充满未来感的酷飒", "detailedAnalysis": "1. 材质拼接：尼龙、皮革、金属拉链的混合使用。<br>2. 结构不对称：打破常规的剪裁，增加视觉的不确定性。<br>3. 实用主义：多口袋设计不仅是装饰，更具有功能性。", "suggestion": "机能风较难驾驭，新手可以先从一双机能风的鞋子或背包开始尝试。" },
-    { "id": "l1", "category": "页面排版", "imageUrl": "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?auto=format&fit=crop&w=800&q=80", "title": "大留白杂志风", "brief": "极简的空间呼吸感", "detailedAnalysis": "1. 负空间：大面积的留白迫使视线聚焦于核心文字。<br>2. 字体对比：超大标题与极小正文形成极限的视觉张力。<br>3. 网格对齐：所有元素严格遵循隐形的左对齐参考线。", "suggestion": "排版最大的忌讳是填满，学会给重要信息留出“呼吸的空气”。" },
-    { "id": "l2", "category": "页面排版", "imageUrl": "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=800&q=80", "title": "瑞士国际主义", "brief": "绝对理性的网格系统", "detailedAnalysis": "1. 无衬线体：使用干净利落的无衬线字体，信息传达高效。<br>2. 模块化：内容被清晰地划分在不同的网格区块中。<br>3. 客观中立：排版不带有过多的个人情感，强调功能性。", "suggestion": "尝试画几条参考线，让图片和文字的边缘绝对对齐，瞬间变专业。" },
-    { "id": "l3", "category": "页面排版", "imageUrl": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80", "title": "包豪斯几何构成", "brief": "基础图形的视觉游戏", "detailedAnalysis": "1. 几何主导：圆形、方形、三角形作为核心视觉元素。<br>2. 原色碰撞：红、黄、蓝三原色的高纯度对比。<br>3. 形随功能：排版形式直接服务于信息传达的目的。", "suggestion": "使用基础几何图形作为文字的背景底色，能有效提升画面的设计感。" },
-    { "id": "l4", "category": "页面排版", "imageUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80", "title": "复古波普艺术", "brief": "打破常规的波普狂欢", "detailedAnalysis": "1. 拼贴手法：将不同来源的图像进行荒诞的拼贴重组。<br>2. 迷幻色彩：使用高饱和的对比色甚至荧光色。<br>3. 粗犷字体：使用带有手工感或漫画风格的粗体字。", "suggestion": "适合用于活动海报或个性品牌，商业报告请勿使用此风格。" },
-    { "id": "l5", "category": "页面排版", "imageUrl": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?auto=format&fit=crop&w=800&q=80", "title": "日式和风物语", "brief": "东方美学的细腻留白", "detailedAnalysis": "1. 竖排文字：保留了传统的竖排阅读习惯，带有文学气息。<br>2. 雅致色调：多使用低纯度的传统和风色彩（如抹茶绿、樱花粉）。<br>3. 细腻肌理：背景常带有宣纸或布纹的微弱肌理感。", "suggestion": "中英文字体搭配时，中文字体选择宋体/明朝体，更显文艺气质。" },
-    { "id": "l6", "category": "页面排版", "imageUrl": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80", "title": "酸性设计", "brief": "前卫的液态金属感", "detailedAnalysis": "1. 液态流体：文字和图形呈现出融化、扭曲的液态质感。<br>2. 镭射渐变：大量使用迷幻的镭射光泽和高明度渐变。<br>3. 密集排版：打破网格，元素密集堆叠，充满赛博朋克感。", "suggestion": "风格极其强烈，只适合潮流品牌或数字艺术领域的展示。" },
-    { "id": "l7", "category": "页面排版", "imageUrl": "https://images.unsplash.com/photo-1512295767273-ac109cb3a5f6?auto=format&fit=crop&w=800&q=80", "title": "数据可视化", "brief": "让复杂信息一目了然", "detailedAnalysis": "1. 逻辑清晰：通过色彩和图形大小直观反映数据逻辑。<br>2. 弱化装饰：去除与数据无关的背景和边框线。<br>3. 重点标注：用高亮色彩将核心结论直接在图表上标出。", "suggestion": "做报表时，去掉 Excel 默认的灰色背景和多余的网格线，画面会干净很多。" },
-    { "id": "l8", "category": "页面排版", "imageUrl": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80", "title": "3D 拟物化", "brief": "柔软的数字粘土", "detailedAnalysis": "1. 柔和阴影：通过同色系的内外阴影，营造出元素凸起或凹陷的错觉。<br>2. 极低对比度：背景与元素的色彩几乎一致，仅靠光影区分。<br>3. 圆润边角：大量使用大圆角，带来极其亲和的视觉体验。", "suggestion": "因为对比度太低，不建议用在重要按钮上，容易导致用户看不清。" },
-    { "id": "h1", "category": "家居装饰", "imageUrl": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80", "title": "现代侘寂微水泥", "brief": "低重心的宁静力量", "detailedAnalysis": "1. 材质原始：微水泥的粗犷与原木的温润结合，保留自然的不完美。<br>2. 视觉重心：低矮的沙发和茶几，视觉上拉高了空间层高。<br>3. 隐形光源：放弃主灯，用见光不见灯的灯带营造氛围。", "suggestion": "侘寂风的核心是“空”，必须做好极强的隐蔽式收纳，否则就是杂乱无章。" },
-    { "id": "h2", "category": "家居装饰", "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80", "title": "法式复古轻奢", "brief": "浪漫与精致的结合", "detailedAnalysis": "1. 墙面线条：PU线条或石膏线在墙面勾勒出几何框，增加层次。<br>2. 材质碰撞：丝绒沙发、黄铜灯具与大理石桌面的经典轻奢组合。<br>3. 人字拼地板：地面采用鱼骨或人字拼木地板，延伸视觉焦点。", "suggestion": "黄铜元素点到为止（如把手、灯杆），大面积使用会显得俗气。" },
-    { "id": "h3", "category": "家居装饰", "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80", "title": "北欧极简实用", "brief": "以人为本的生活方式", "detailedAnalysis": "1. 色彩明亮：大面积的白色墙面搭配浅色原木，最大化反射自然光。<br>2. 绿植点缀：大型阔叶绿植（如龟背竹、天堂鸟）为空间注入生机。<br>3. 轻盈家具：细腿的桌椅设计，让空间看起来更通透不拥挤。", "suggestion": "北欧风很容易装成“出租屋风”，关键在于购买几件有设计感的经典款单椅撑场面。" },
-    { "id": "h4", "category": "家居装饰", "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80", "title": "美式乡村田园", "brief": "温暖厚重的家庭氛围", "detailedAnalysis": "1. 厚重敦实：体量宽大的布艺沙发和实木茶几，给人安全感。<br>2. 碎花元素：适度的碎花壁纸或抱枕，带来田园气息。<br>3. 暖光氛围：多使用台灯和落地灯，散发2700K的温馨暖黄光。", "suggestion": "适合大平层或别墅，小户型使用厚重的美式家具会显得极度压抑。" },
-    { "id": "h5", "category": "家居装饰", "imageUrl": "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80", "title": "工业 LOFT 风", "brief": "粗犷的原始机械感", "detailedAnalysis": "1. 裸露结构：刻意暴露水泥顶、红砖墙和走线管道，展示建筑肌理。<br>2. 铁艺与皮质：黑色铁艺书架与做旧的棕色真皮沙发是绝配。<br>3. 开放空间：极少使用实墙隔断，让空间保持连贯与通透。", "suggestion": "采光不好的房子千万不要做工业风，会像一个阴暗的地下仓库。" },
-    { "id": "h6", "category": "家居装饰", "imageUrl": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80", "title": "新中式禅意", "brief": "东方骨架与现代皮相", "detailedAnalysis": "1. 留白意境：不把墙面填满，通过圆窗或屏风形成“框景”。<br>2. 线条简化：去除了传统中式繁复的雕花，保留家具的榫卯线条。<br>3. 材质融合：胡桃木搭配现代的布艺软包，兼顾意境与坐感舒适度。", "suggestion": "新中式切忌红木堆砌，用几根纤细的黑胡桃木线条就能勾勒出东方韵味。" },
-    { "id": "h7", "category": "家居装饰", "imageUrl": "https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=800&q=80", "title": "奶油中古风", "brief": "复古与温柔的平衡", "detailedAnalysis": "1. 暖调基底：墙面采用带一点黄调的奶油白，柔和不刺眼。<br>2. 中古单品：加入柚木色的中古柜或复古灯具，增加岁月的沉淀感。<br>3. 圆润线条：地毯、茶几多采用不规则的异形或弧形设计。", "suggestion": "奶油色墙漆非常容易翻车，刷漆前一定要在自然光下试色对比。" },
-    { "id": "h8", "category": "家居装饰", "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80", "title": "孟菲斯多巴胺", "brief": "打破陈规的色彩狂欢", "detailedAnalysis": "1. 几何碰撞：随处可见的波浪纹、圆点、黑白格等跳跃图案。<br>2. 高明度撞色：粉、黄、蓝等亮色块的随意拼接，带来极强的情绪感染力。<br>3. 趣味造型：家具往往具有奇特的玩具感或雕塑感。", "suggestion": "看久了容易视觉疲劳，建议只在一个独立小空间（如阳台、次卧）尝试。" }
+    {
+        "id": "top_0_20260507",
+        "category": "视觉灵感",
+        "imageUrl": "https://images.unsplash.com/photo-1512295767273-ac109cb3a5f6?auto=format&fit=crop&w=800&q=80&sig=202605070",
+        "title": "今日热榜 No.1 - Minimalist",
+        "brief": "全网高讨论度视觉标杆，由 Art Sense 自动捕捉。",
+        "detailedAnalysis": "1. 几何平衡：严格的网格构图。<br>2. 色彩逻辑：采用极简的中性色调。",
+        "suggestion": "建议尝试高留白排版。"
+    },
+    {
+        "id": "top_1_20260507",
+        "category": "视觉灵感",
+        "imageUrl": "https://images.unsplash.com/photo-1512295767273-ac109cb3a5f6?auto=format&fit=crop&w=800&q=80&sig=202605071",
+        "title": "今日热榜 No.2 - Editorial",
+        "brief": "全网高讨论度视觉标杆，由 Art Sense 自动捕捉。",
+        "detailedAnalysis": "1. 几何平衡：严格的网格构图。<br>2. 色彩逻辑：采用极简的中性色调。",
+        "suggestion": "建议尝试高留白排版。"
+    },
+    {
+        "id": "top_2_20260507",
+        "category": "视觉灵感",
+        "imageUrl": "https://images.unsplash.com/photo-1512295767273-ac109cb3a5f6?auto=format&fit=crop&w=800&q=80&sig=202605072",
+        "title": "今日热榜 No.3 - Modern-Interior",
+        "brief": "全网高讨论度视觉标杆，由 Art Sense 自动捕捉。",
+        "detailedAnalysis": "1. 几何平衡：严格的网格构图。<br>2. 色彩逻辑：采用极简的中性色调。",
+        "suggestion": "建议尝试高留白排版。"
+    },
+    {
+        "id": "top_3_20260507",
+        "category": "视觉灵感",
+        "imageUrl": "https://images.unsplash.com/photo-1512295767273-ac109cb3a5f6?auto=format&fit=crop&w=800&q=80&sig=202605073",
+        "title": "今日热榜 No.4 - Avant-Garde",
+        "brief": "全网高讨论度视觉标杆，由 Art Sense 自动捕捉。",
+        "detailedAnalysis": "1. 几何平衡：严格的网格构图。<br>2. 色彩逻辑：采用极简的中性色调。",
+        "suggestion": "建议尝试高留白排版。"
+    },
+    {
+        "id": "top_4_20260507",
+        "category": "视觉灵感",
+        "imageUrl": "https://images.unsplash.com/photo-1512295767273-ac109cb3a5f6?auto=format&fit=crop&w=800&q=80&sig=202605074",
+        "title": "今日热榜 No.5 - Minimalist",
+        "brief": "全网高讨论度视觉标杆，由 Art Sense 自动捕捉。",
+        "detailedAnalysis": "1. 几何平衡：严格的网格构图。<br>2. 色彩逻辑：采用极简的中性色调。",
+        "suggestion": "建议尝试高留白排版。"
+    },
+    {
+        "id": "top_5_20260507",
+        "category": "视觉灵感",
+        "imageUrl": "https://images.unsplash.com/photo-1512295767273-ac109cb3a5f6?auto=format&fit=crop&w=800&q=80&sig=202605075",
+        "title": "今日热榜 No.6 - Editorial",
+        "brief": "全网高讨论度视觉标杆，由 Art Sense 自动捕捉。",
+        "detailedAnalysis": "1. 几何平衡：严格的网格构图。<br>2. 色彩逻辑：采用极简的中性色调。",
+        "suggestion": "建议尝试高留白排版。"
+    },
+    {
+        "id": "top_6_20260507",
+        "category": "视觉灵感",
+        "imageUrl": "https://images.unsplash.com/photo-1512295767273-ac109cb3a5f6?auto=format&fit=crop&w=800&q=80&sig=202605076",
+        "title": "今日热榜 No.7 - Modern-Interior",
+        "brief": "全网高讨论度视觉标杆，由 Art Sense 自动捕捉。",
+        "detailedAnalysis": "1. 几何平衡：严格的网格构图。<br>2. 色彩逻辑：采用极简的中性色调。",
+        "suggestion": "建议尝试高留白排版。"
+    },
+    {
+        "id": "top_7_20260507",
+        "category": "视觉灵感",
+        "imageUrl": "https://images.unsplash.com/photo-1512295767273-ac109cb3a5f6?auto=format&fit=crop&w=800&q=80&sig=202605077",
+        "title": "今日热榜 No.8 - Avant-Garde",
+        "brief": "全网高讨论度视觉标杆，由 Art Sense 自动捕捉。",
+        "detailedAnalysis": "1. 几何平衡：严格的网格构图。<br>2. 色彩逻辑：采用极简的中性色调。",
+        "suggestion": "建议尝试高留白排版。"
+    }
 ]
