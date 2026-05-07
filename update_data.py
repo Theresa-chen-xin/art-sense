@@ -5,27 +5,33 @@ import os
 import time
 import google.generativeai as genai
 
-# 获取钥匙
+# 配置 AI 钥匙
 GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
 genai.configure(api_key=GOOGLE_API_KEY)
-# 使用更快速稳定的模型
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 def analyze_pro(category, photo_id):
     timestamp = datetime.datetime.now().strftime("%H%M%S")
+    # --- 导师级深度提示词 ---
     prompt = f"""
-    Role: 你是一位拥有20年经验的艺术学院教授，风格“绝对理性且客观”。
-    Task: 深度拆解【{category}】领域的视觉标杆（图片ID: {photo_id}）。
-    要求：从底层逻辑（Why）、视觉锚点（Where）、细节叙事、批判性提升四个维度进行拆解。禁止感性废话。
-    输出JSON格式：
+    Role: 你是一位拥有 20 年经验的、客观理性的设计策展人。
+    Task: 拆解【{category}】领域的视觉标杆（图片ID: {photo_id}）。
+    
+    你必须按照以下深度框架拆解，禁止感性废话：
+    1. 底层逻辑: 该作品好在哪？利用了什么设计法则（如黄金分割、肌理对比）？
+    2. 视觉锚点: 视线第一落点在哪？设计师如何引导视线？
+    3. 细节叙事: 材质、光影或留白起到了什么关键作用？
+    4. 批判性提升: 如果调整某个微小元素，会有什么质的飞跃？为什么？
+
+    输出格式（严格 JSON）：
     {{
-        "id": "pro_{photo_id}_{timestamp}",
+        "id": "item_{photo_id}_{timestamp}",
         "category": "{category}",
         "imageUrl": "https://i0.wp.com/images.unsplash.com/photo-{photo_id}?w=1000&q=80",
-        "title": "学术级标题",
-        "brief": "视觉逻辑总结",
-        "detailedAnalysis": "四点技术拆解，用.<br>分割",
-        "suggestion": "小白实战建议"
+        "title": "（起一个学术风格的标题）",
+        "brief": "（用设计法则总结核心视觉逻辑）",
+        "detailedAnalysis": "（上述 4 点深度拆解，用.<br>分割）",
+        "suggestion": "（给新手的实战避坑指南）"
     }}
     """
     try:
@@ -45,11 +51,11 @@ def update():
     results = []
     for cat, ids in professional_ids.items():
         for pid in ids:
-            print(f"深度拆解: {cat} - {pid}")
+            print(f"AI 正在深度拆解: {cat} - {pid}")
             data = analyze_pro(cat, pid)
             if data: 
                 results.append(data)
-                time.sleep(1) # 频率控制
+                time.sleep(1) # 保护 API 频率
             
     with open('aesthetic_data.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
