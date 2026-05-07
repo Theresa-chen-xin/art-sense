@@ -1,44 +1,41 @@
 import json
-import requests
 import datetime
 
 def fetch_trending():
     timestamp = datetime.datetime.now().strftime("%Y%m%d")
-    # 挑选了 8 张在不同网络环境下加载表现最好的高清图 ID
-    photo_ids = [
-        "1550614000-4b95d4662d59", # 法式极简
-        "1434389678232-04e21dca1ef3", # 老钱风
-        "1529139574466-a303027c1d8b", # 复古高街
-        "1503694978374-8a2fa686963a", # 杂志排版
-        "1586075010923-2dd4570fb338", # 瑞士网格
-        "1600210492486-724fe5c67fb0", # 现代侘寂
-        "1618221195710-dd6b41faaea6", # 法式轻奢
-        "1586023492125-27b2c045efd7"  # 北欧极简
-    ]
     
-    topics = ["Fashion", "Layout", "Interior", "Minimalist"]
-    results = []
+    # 定义三个板块及其对应的图片风格关键词
+    categories = {
+        "女性穿搭": ["fashion", "editorial", "style", "streetwear", "minimalist-fashion", "vogue", "outfit", "runway"],
+        "页面排版": ["layout", "typography", "graphic-design", "poster", "swiss-design", "minimalism", "branding", "ui"],
+        "家居装饰": ["interior", "architecture", "home-decor", "minimalist-home", "modern-living", "furniture", "loft", "wabi-sabi"]
+    }
     
-    for i in range(8):
-        topic = topics[i % len(topics)]
-        # 使用 Unsplash 官方的主域名，并强制使用压缩格式以加快加载速度
-        img_url = f"https://images.unsplash.com/photo-{photo_ids[i]}?auto=format&fit=crop&w=800&q=60"
-        
-        results.append({
-            "id": f"top_{i}_{timestamp}",
-            "category": "视觉灵感",
-            "imageUrl": img_url,
-            "title": f"今日热榜 No.{i+1} - {topic}",
-            "brief": "由 Art Sense 自动化引擎实时捕捉的审美趋势。",
-            "detailedAnalysis": "1. 视觉重心：利用对角线构图引导视线。<br>2. 质感表达：通过高对比度强调材质细节。<br>3. 色彩平衡：低饱和度色彩传递专业感。",
-            "suggestion": "建议在短视频封面尝试此类居中排版，增加点击率。"
-        })
-    return results
+    all_results = []
+    
+    for category, keywords in categories.items():
+        for i in range(8): # 每个板块生成 8 条，总计 24 条
+            keyword = keywords[i]
+            # 优化后的图片链接，加入更多随机因子和质量控制
+            img_url = f"https://images.unsplash.com/featured/800x1000?{keyword}&sig={timestamp}{category}{i}"
+            
+            all_results.append({
+                "id": f"{category}_{i}_{timestamp}",
+                "category": category,
+                "imageUrl": img_url,
+                "title": f"今日热榜 No.{i+1} - {keyword.title()}",
+                "brief": f"捕捉全网关于【{category}】的最高级审美趋势。",
+                "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+                "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+            })
+            
+    return all_results
 
 try:
+    print("正在为 3 大板块补货，每份 8 条热点...")
     data = fetch_trending()
     with open('aesthetic_data.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
-    print("数据库已更新，图片源已优化！")
+    print("补货完成！24 条审美灵感已上架。")
 except Exception as e:
-    print(f"更新出错: {e}")
+    print(f"补货失败: {e}")
