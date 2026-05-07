@@ -1,0 +1,30 @@
+name: Auto Update Top 8
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天早上 8 点自动执行
+  workflow_dispatch: # 允许你手动点按钮更新
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Run Script
+        run: |
+          pip install requests
+          python update_data.py
+      - name: Save to Repo
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Bot"
+          git add aesthetic_data.json
+          git commit -m "Update: Daily Top 8" || exit 0
+          git push
