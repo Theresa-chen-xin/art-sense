@@ -3,47 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Sense Levelup | 审美实验室</title>
+    <title>Art Sense Levelup.</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; background: #fff; }
         .font-serif { font-family: 'Playfair Display', serif; }
-        /* 侧边栏滑出动画 */
         #drawer { transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
         .drawer-open { transform: translateX(0) !important; }
+        /* 恢复图二的背景样式 */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
-<body class="bg-white text-black overflow-x-hidden">
+<body class="overflow-x-hidden">
 
-    <header class="py-16 text-center border-b border-gray-50">
-        <h1 class="font-serif text-5xl mb-4 tracking-tight">Art Sense Levelup.</h1>
-        <p class="text-gray-400 uppercase tracking-[0.3em] text-[10px]">A definitive gallery of international design and visual excellence</p>
+    <header class="bg-black text-white px-8 py-6 flex justify-between items-center fixed w-full z-30">
+        <div class="font-serif text-2xl tracking-tighter">Art Sense Levelup.</div>
+        <nav class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] italic">
+            <a href="#" class="border-b border-white pb-1">discover</a>
+            <a href="#" class="opacity-60 hover:opacity-100 transition-opacity">fashion</a>
+            <a href="#" class="opacity-60 hover:opacity-100 transition-opacity">layout</a>
+            <a href="#" class="opacity-60 hover:opacity-100 transition-opacity">home decor</a>
+        </nav>
+        <button class="border border-white/30 rounded-full px-6 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">Subscribe</button>
     </header>
 
-    <nav class="flex justify-center space-x-12 py-10 text-[11px] font-bold uppercase tracking-[0.2em] border-b border-gray-50 mb-12 sticky top-0 bg-white/80 backdrop-blur-md z-10">
-        <a href="#" class="border-b-2 border-black pb-1">Discover</a>
-        <a href="#" class="text-gray-300 hover:text-black transition-colors">Fashion</a>
-        <a href="#" class="text-gray-300 hover:text-black transition-colors">Layout</a>
-        <a href="#" class="text-gray-300 hover:text-black transition-colors">Home Decor</a>
-    </nav>
+    <section class="hero-bg h-[80vh] flex flex-col justify-center items-center text-center text-white px-6">
+        <h2 class="font-serif text-8xl md:text-9xl mb-8 tracking-tighter animate-fade-in">Art Sense<br>Levelup.</h2>
+        <p class="max-w-xl text-gray-300 text-sm leading-relaxed opacity-80 tracking-wide font-medium">
+            A definitive gallery of international design and visual excellence: an epic love story with design spanning fashion, layout, and home decor, from the inner circle of the...
+        </p>
+    </section>
 
-    <main class="max-w-[1400px] mx-auto px-8 mb-32">
-        <div id="gallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-16">
+    <div class="max-w-7xl mx-auto py-24 px-8">
+        <div class="flex justify-center space-x-12 mb-20 text-[11px] font-bold uppercase tracking-[0.2em]">
+            <button class="border-b-2 border-black pb-2">今日热榜精选</button>
+            <button class="text-gray-300 hover:text-black transition-colors pb-2">我的收藏库</button>
+        </div>
+        <div id="gallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20">
             </div>
-    </main>
+    </div>
 
-    <div id="drawer" class="fixed top-0 right-0 h-full w-full md:w-[500px] bg-white shadow-2xl z-50 transform translate-x-full border-l border-gray-100 overflow-y-auto">
-        <div class="p-10">
-            <button onclick="closeDrawer()" class="mb-8 text-gray-400 hover:text-black uppercase text-[10px] tracking-widest flex items-center">
-                <span class="mr-2">←</span> Back to Gallery
+    <div id="drawer" class="fixed top-0 right-0 h-full w-full md:w-[600px] bg-white shadow-2xl z-50 transform translate-x-full border-l border-gray-100 overflow-y-auto">
+        <div class="p-12">
+            <button onclick="closeDrawer()" class="mb-12 text-gray-400 hover:text-black uppercase text-[10px] tracking-widest flex items-center group">
+                <span class="mr-3 group-hover:-translate-x-1 transition-transform">←</span> Back to Gallery
             </button>
             <div id="drawer-content">
                 </div>
         </div>
     </div>
 
-    <div id="overlay" class="fixed inset-0 bg-black/10 opacity-0 pointer-events-none transition-opacity z-40" onclick="closeDrawer()"></div>
+    <div id="overlay" class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity z-40" onclick="closeDrawer()"></div>
 
     <script>
         let allData = [];
@@ -53,21 +68,21 @@
                 const response = await fetch('aesthetic_data.json');
                 allData = await response.json();
                 renderGallery(allData);
-            } catch (e) {
-                console.error("数据加载失败", e);
-            }
+            } catch (e) { console.error(e); }
         }
 
         function renderGallery(data) {
             const gallery = document.getElementById('gallery');
             gallery.innerHTML = data.map(item => `
-                <div class="group cursor-pointer flex flex-col" onclick="openDrawer('${item.id}')">
-                    <div class="w-full aspect-[4/5] overflow-hidden rounded-sm bg-gray-50 relative mb-6">
-                        <img src="${item.imageUrl}" loading="lazy" class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                <div class="group cursor-pointer" onclick="openDrawer('${item.id}')">
+                    <div class="aspect-[4/5] overflow-hidden rounded-sm bg-gray-100 mb-8 shadow-sm">
+                        <img src="${item.imageUrl}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[0.3] group-hover:grayscale-0">
                     </div>
-                    <span class="text-[9px] font-bold text-gray-400 uppercase tracking-[0.3em] mb-2 italic">${item.category}</span>
-                    <h3 class="font-serif text-xl font-bold text-black mb-2">${item.title}</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed line-clamp-2">${item.brief}</p>
+                    <div class="text-center">
+                        <span class="text-[9px] font-bold text-gray-400 uppercase tracking-[0.4em] mb-3 block italic">${item.category}</span>
+                        <h3 class="font-serif text-3xl font-bold text-black mb-3 leading-tight">${item.title}</h3>
+                        <p class="text-xs text-gray-400 font-medium tracking-wide">${item.brief}</p>
+                    </div>
                 </div>
             `).join('');
         }
@@ -78,29 +93,22 @@
 
             const content = document.getElementById('drawer-content');
             content.innerHTML = `
-                <div class="mb-10 aspect-[4/5] rounded-sm overflow-hidden shadow-lg">
+                <div class="mb-12 aspect-video rounded-sm overflow-hidden shadow-2xl">
                     <img src="${item.imageUrl}" class="w-full h-full object-cover">
                 </div>
-                <h2 class="font-serif text-3xl font-bold mb-4">${item.title}</h2>
-                <div class="flex items-center space-x-4 mb-8 text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                <h2 class="font-serif text-4xl font-bold mb-6 leading-tight">${item.title}</h2>
+                <div class="flex items-center space-x-4 mb-12 text-[10px] font-bold uppercase tracking-[0.3em] text-gray-300">
                     <span>${item.category}</span>
                     <span class="w-1 h-1 bg-gray-200 rounded-full"></span>
                     <span>Pro Analysis</span>
                 </div>
                 
-                <div class="space-y-10">
-                    <section>
-                        <h4 class="text-[11px] font-bold uppercase tracking-widest text-gray-300 mb-4">导师级元素拆解</h4>
-                        <div class="text-sm text-gray-600 leading-relaxed space-y-4">
-                            ${item.detailedAnalysis}
-                        </div>
-                    </section>
-                    
-                    <section class="bg-gray-50 p-6 rounded-sm border-l-2 border-black">
-                        <h4 class="text-[11px] font-bold uppercase tracking-widest text-black mb-3">商业建议</h4>
-                        <p class="text-sm text-gray-600 italic">“${item.suggestion}”</p>
-                    </section>
-                </div>
+                <section>
+                    <h4 class="text-[11px] font-bold uppercase tracking-widest text-black/20 mb-8 border-b border-gray-50 pb-4 italic">导师级元素拆解</h4>
+                    <div class="text-[15px] text-gray-700 leading-relaxed font-medium">
+                        ${item.detailedAnalysis}
+                    </div>
+                </section>
             `;
 
             document.getElementById('drawer').classList.add('drawer-open');
