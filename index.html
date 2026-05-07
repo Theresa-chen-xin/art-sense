@@ -3,80 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Sense Levelup | 审美操盘手实验室</title>
+    <title>Art Sense Levelup | 审美实验室</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #ffffff; }
+        body { font-family: 'Inter', sans-serif; }
         .font-serif { font-family: 'Playfair Display', serif; }
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-        }
+        /* 侧边栏滑出动画 */
+        #drawer { transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .drawer-open { transform: translateX(0) !important; }
     </style>
 </head>
-<body class="bg-white text-black">
+<body class="bg-white text-black overflow-x-hidden">
 
-    <header class="py-12 text-center border-b border-gray-100">
+    <header class="py-16 text-center border-b border-gray-50">
         <h1 class="font-serif text-5xl mb-4 tracking-tight">Art Sense Levelup.</h1>
-        <p class="text-gray-400 uppercase tracking-[0.2em] text-xs">A definitive gallery of international design and visual excellence</p>
+        <p class="text-gray-400 uppercase tracking-[0.3em] text-[10px]">A definitive gallery of international design and visual excellence</p>
     </header>
 
-    <nav class="flex justify-center space-x-12 py-8 text-sm font-bold uppercase tracking-widest border-b border-gray-50 mb-12">
+    <nav class="flex justify-center space-x-12 py-10 text-[11px] font-bold uppercase tracking-[0.2em] border-b border-gray-50 mb-12 sticky top-0 bg-white/80 backdrop-blur-md z-10">
         <a href="#" class="border-b-2 border-black pb-1">Discover</a>
         <a href="#" class="text-gray-300 hover:text-black transition-colors">Fashion</a>
         <a href="#" class="text-gray-300 hover:text-black transition-colors">Layout</a>
         <a href="#" class="text-gray-300 hover:text-black transition-colors">Home Decor</a>
     </nav>
 
-    <main class="max-w-7xl mx-auto px-6 mb-24">
-        <div id="gallery" class="gallery-grid">
-            <div class="col-span-full text-center py-24 text-gray-300">正在调取全球审美数据...</div>
-        </div>
+    <main class="max-w-[1400px] mx-auto px-8 mb-32">
+        <div id="gallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-16">
+            </div>
     </main>
 
+    <div id="drawer" class="fixed top-0 right-0 h-full w-full md:w-[500px] bg-white shadow-2xl z-50 transform translate-x-full border-l border-gray-100 overflow-y-auto">
+        <div class="p-10">
+            <button onclick="closeDrawer()" class="mb-8 text-gray-400 hover:text-black uppercase text-[10px] tracking-widest flex items-center">
+                <span class="mr-2">←</span> Back to Gallery
+            </button>
+            <div id="drawer-content">
+                </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="fixed inset-0 bg-black/10 opacity-0 pointer-events-none transition-opacity z-40" onclick="closeDrawer()"></div>
+
     <script>
+        let allData = [];
+
         async function init() {
             try {
-                // 1. 去货架取货（读取 JSON 数据）
                 const response = await fetch('aesthetic_data.json');
-                const data = await response.json();
-                
-                if (data && data.length > 0) {
-                    renderGallery(data);
-                } else {
-                    document.getElementById('gallery').innerHTML = '<p class="col-span-full text-center text-gray-400">货架空了，请运行 Actions 进货。</p>';
-                }
-            } catch (error) {
-                console.error("加载数据失败:", error);
+                allData = await response.json();
+                renderGallery(allData);
+            } catch (e) {
+                console.error("数据加载失败", e);
             }
         }
 
-        function renderGallery(dataArray) {
+        function renderGallery(data) {
             const gallery = document.getElementById('gallery');
-            gallery.innerHTML = ''; // 清空之前的加载提示
-
-            // 2. 核心循环：把 24 条数据逐一变成漂亮的卡片
-            dataArray.forEach((item) => {
-                const card = `
-                    <div class="group cursor-pointer flex flex-col items-center text-center px-4 py-8 rounded-lg hover:bg-gray-50/50 transition-all duration-300">
-                        <div class="w-full aspect-[3/4] overflow-hidden rounded bg-gray-100 relative shadow-sm">
-                            <img src="${item.imageUrl}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                        </div>
-                        <div class="pt-8">
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-[0.3em] mb-3 block italic">${item.category}</span>
-                            <h3 class="font-serif text-2xl font-bold text-black mb-3 leading-tight group-hover:text-gray-600 transition-colors">${item.title}</h3>
-                            <p class="text-sm font-medium text-gray-400 leading-relaxed max-w-[240px] mx-auto">${item.brief}</p>
-                        </div>
+            gallery.innerHTML = data.map(item => `
+                <div class="group cursor-pointer flex flex-col" onclick="openDrawer('${item.id}')">
+                    <div class="w-full aspect-[4/5] overflow-hidden rounded-sm bg-gray-50 relative mb-6">
+                        <img src="${item.imageUrl}" loading="lazy" class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
                     </div>
-                `;
-                // 使用 insertAdjacentHTML 确保 24 张图依次排队上架
-                gallery.insertAdjacentHTML('beforeend', card);
-            });
+                    <span class="text-[9px] font-bold text-gray-400 uppercase tracking-[0.3em] mb-2 italic">${item.category}</span>
+                    <h3 class="font-serif text-xl font-bold text-black mb-2">${item.title}</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed line-clamp-2">${item.brief}</p>
+                </div>
+            `).join('');
         }
 
-        // 启动系统
+        function openDrawer(id) {
+            const item = allData.find(d => d.id === id);
+            if (!item) return;
+
+            const content = document.getElementById('drawer-content');
+            content.innerHTML = `
+                <div class="mb-10 aspect-[4/5] rounded-sm overflow-hidden shadow-lg">
+                    <img src="${item.imageUrl}" class="w-full h-full object-cover">
+                </div>
+                <h2 class="font-serif text-3xl font-bold mb-4">${item.title}</h2>
+                <div class="flex items-center space-x-4 mb-8 text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                    <span>${item.category}</span>
+                    <span class="w-1 h-1 bg-gray-200 rounded-full"></span>
+                    <span>Pro Analysis</span>
+                </div>
+                
+                <div class="space-y-10">
+                    <section>
+                        <h4 class="text-[11px] font-bold uppercase tracking-widest text-gray-300 mb-4">导师级元素拆解</h4>
+                        <div class="text-sm text-gray-600 leading-relaxed space-y-4">
+                            ${item.detailedAnalysis}
+                        </div>
+                    </section>
+                    
+                    <section class="bg-gray-50 p-6 rounded-sm border-l-2 border-black">
+                        <h4 class="text-[11px] font-bold uppercase tracking-widest text-black mb-3">商业建议</h4>
+                        <p class="text-sm text-gray-600 italic">“${item.suggestion}”</p>
+                    </section>
+                </div>
+            `;
+
+            document.getElementById('drawer').classList.add('drawer-open');
+            document.getElementById('overlay').classList.replace('opacity-0', 'opacity-100');
+            document.getElementById('overlay').classList.replace('pointer-events-none', 'pointer-events-auto');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            document.getElementById('drawer').classList.remove('drawer-open');
+            document.getElementById('overlay').classList.replace('opacity-100', 'opacity-0');
+            document.getElementById('overlay').classList.replace('pointer-events-auto', 'pointer-events-none');
+            document.body.style.overflow = 'auto';
+        }
+
         init();
     </script>
 </body>
