@@ -4,45 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Sense Levelup</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'serif'], serif: ['Playfair Display', 'serif'] } } } }
+        // 2. 重新配置 Tailind 字体映射，确保 serif 调用高级衬线体
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
     </script>
     <style>
         .drawer-open { transform: translateX(0%); }
         .drawer-closed { transform: translateX(100%); }
         .fade-in { opacity: 1; pointer-events: auto; }
         .fade-out { opacity: 0; pointer-events: none; }
+        /* 确保导航栏分类全小写且带有 Playfair Display 的斜体和高级感 */
         .nav-item { font-family: 'Playfair Display', serif; font-style: italic; color: #b0b0b0; text-transform: lowercase; }
         .nav-active { color: white !important; font-weight: bold; border-bottom: 2px solid white; }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
     </style>
 </head>
 <body class="bg-[#fafafa] text-[#191919] antialiased overflow-x-hidden font-sans">
     <nav class="bg-black text-white px-10 py-6 flex justify-between items-center sticky top-0 z-40 border-b border-white/10">
-        <div class="text-3xl font-serif font-bold">Art Sense Levelup<span class="text-white/50 ml-1">.</span></div>
+        <div class="text-3xl font-serif font-bold tracking-tight">Art Sense Levelup<span class="text-white/50 ml-1">.</span></div>
         <div class="hidden md:flex space-x-10 text-sm font-semibold">
             <a href="#" onclick="filterData('all', this)" class="nav-item nav-active transition">discover</a>
             <a href="#" onclick="filterData('女性穿搭', this)" class="nav-item hover:text-white transition">fashion</a>
             <a href="#" onclick="filterData('页面排版', this)" class="nav-item hover:text-white transition">layout</a>
             <a href="#" onclick="filterData('家居装饰', this)" class="nav-item hover:text-white transition">home decor</a>
         </div>
-        <button class="border border-white text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition">Subscribe</button>
+        <button class="bg-transparent hover:bg-white hover:text-black border border-white text-white px-6 py-2 rounded-full text-xs font-bold transition uppercase tracking-widest">Subscribe</button>
     </nav>
+
     <header class="w-full min-h-[60vh] bg-black relative flex items-center justify-center border-b border-gray-200">
         <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2000&q=80" class="absolute inset-0 w-full h-full object-cover opacity-60">
         <div class="relative z-10 text-center text-white px-8">
             <div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Global Visual Excellence Gallery</div>
-            <h1 class="text-6xl md:text-7xl font-serif font-bold mb-6 leading-tight">审美进阶·每日热榜</h1>
-            <p class="text-gray-300 max-w-xl mx-auto text-sm md:text-base leading-relaxed opacity-70">全自动捕捉全球顶级穿搭、排版、家居设计案例，每日 08:00 准时补货。</p>
+            <h1 class="text-6xl md:text-7xl font-serif font-bold mb-6 leading-[1.1]">
+                审美进阶·每日热榜
+            </h1>
+            <p class="text-gray-300 font-sans max-w-xl mx-auto text-sm md:text-base leading-relaxed opacity-70">
+                由 Gemini AI 全自动寻猎全球顶级设计案例，每早 08:00 准时补货，用专业视角重塑你的视觉基因。
+            </p>
         </div>
     </header>
+
     <main class="max-w-7xl mx-auto px-8 py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12" id="gallery">
             <p class="text-gray-500 col-span-full text-center py-20 text-lg">正在为你的审美开路...</p>
         </div>
     </main>
+
     <script>
         let allData = [];
         const noCacheUrl = 'aesthetic_data.json?time=' + new Date().getTime();
@@ -56,25 +75,25 @@
             const gallery = document.getElementById('gallery');
             gallery.innerHTML = '';
             if(dataArray.length === 0) {
-                gallery.innerHTML = '<p class="text-gray-500 col-span-full text-center py-24">这里目前空空如也~</p>';
+                gallery.innerHTML = '<p class="text-gray-500 col-span-full text-center py-24 text-xl">这里目前空空如也~</p>';
                 return;
             }
-            dataArray.forEach((item, index) => {
+            dataArray.forEach(item => {
                 const card = `
-                    <div class="group cursor-pointer flex flex-col items-center px-4 py-8 rounded-lg hover:bg-gray-50/50">
+                    <div class="group cursor-pointer flex flex-col items-center text-center px-4 py-8 rounded-lg hover:bg-gray-50/50">
                         <div class="w-full aspect-[1/1] overflow-hidden rounded bg-gray-100 relative">
-                            <img 
-                                src="${item.imageUrl}" 
-                                loading="lazy" 
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                alt="${item.title}"
-                                onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://images.unsplash.com/photo-1512295767273-ac109cb3a5f6&w=300&q=50';"
-                            >
+                            <img src="${item.imageUrl}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="pt-6">
+                            <div class="text-[11px] font-serif font-bold text-gray-500 uppercase tracking-widest mb-2 italic">
+                                ${item.category}
                             </div>
-                        <div class="pt-6 text-center">
-                            <div class="text-[10px] font-serif font-bold text-gray-500 uppercase tracking-widest mb-2">${item.category}</div>
-                            <h3 class="font-serif text-xl font-bold text-black mb-2">${item.title}</h3>
-                            <p class="text-sm text-gray-500 opacity-70">${item.brief}</p>
+                            <h3 class="font-serif text-2xl font-bold text-black mb-2 group-hover:underline decoration-1 underline-offset-4 leading-tight">
+                                ${item.title}
+                            </div>
+                            <p class="text-sm font-sans font-medium text-gray-500 mt-1 opacity-70 leading-relaxed">
+                                ${item.brief}
+                            </p>
                         </div>
                     </div>
                 `;
