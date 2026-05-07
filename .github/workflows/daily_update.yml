@@ -13,22 +13,27 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
+
       - name: Install dependencies
         run: |
           pip install requests
           pip install google-generativeai
+
+      # 这里的 env 会把你的钥匙带给上面的 Python 员工
       - name: Run update script
         env:
           GOOGLE_API_KEY: ${{ secrets.GEMINI_KEY }}
         run: python update_data.py
+
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add aesthetic_data.json
-          git commit -m "Auto update: Logic alignment" || exit 0
+          git commit -m "Auto update: Restocked 24 Pro items" || exit 0
           git push
