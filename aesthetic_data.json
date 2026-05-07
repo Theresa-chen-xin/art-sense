@@ -1,74 +1,218 @@
 [
     {
-        "id": "top_0_20260507",
-        "category": "视觉灵感",
-        "imageUrl": "https://images.unsplash.com/photo-1550614000-4b95d4662d59?auto=format&fit=crop&w=800&q=60",
+        "id": "女性穿搭_0_20260507",
+        "category": "女性穿搭",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?fashion&sig=20260507女性穿搭0",
         "title": "今日热榜 No.1 - Fashion",
-        "brief": "由 Art Sense 自动化引擎实时捕捉的审美趋势。",
-        "detailedAnalysis": "1. 视觉重心：利用对角线构图引导视线。<br>2. 质感表达：通过高对比度强调材质细节。<br>3. 色彩平衡：低饱和度色彩传递专业感。",
-        "suggestion": "建议在短视频封面尝试此类居中排版，增加点击率。"
+        "brief": "捕捉全网关于【女性穿搭】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
     },
     {
-        "id": "top_1_20260507",
-        "category": "视觉灵感",
-        "imageUrl": "https://images.unsplash.com/photo-1434389678232-04e21dca1ef3?auto=format&fit=crop&w=800&q=60",
-        "title": "今日热榜 No.2 - Layout",
-        "brief": "由 Art Sense 自动化引擎实时捕捉的审美趋势。",
-        "detailedAnalysis": "1. 视觉重心：利用对角线构图引导视线。<br>2. 质感表达：通过高对比度强调材质细节。<br>3. 色彩平衡：低饱和度色彩传递专业感。",
-        "suggestion": "建议在短视频封面尝试此类居中排版，增加点击率。"
+        "id": "女性穿搭_1_20260507",
+        "category": "女性穿搭",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?editorial&sig=20260507女性穿搭1",
+        "title": "今日热榜 No.2 - Editorial",
+        "brief": "捕捉全网关于【女性穿搭】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
     },
     {
-        "id": "top_2_20260507",
-        "category": "视觉灵感",
-        "imageUrl": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=60",
-        "title": "今日热榜 No.3 - Interior",
-        "brief": "由 Art Sense 自动化引擎实时捕捉的审美趋势。",
-        "detailedAnalysis": "1. 视觉重心：利用对角线构图引导视线。<br>2. 质感表达：通过高对比度强调材质细节。<br>3. 色彩平衡：低饱和度色彩传递专业感。",
-        "suggestion": "建议在短视频封面尝试此类居中排版，增加点击率。"
+        "id": "女性穿搭_2_20260507",
+        "category": "女性穿搭",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?style&sig=20260507女性穿搭2",
+        "title": "今日热榜 No.3 - Style",
+        "brief": "捕捉全网关于【女性穿搭】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
     },
     {
-        "id": "top_3_20260507",
-        "category": "视觉灵感",
-        "imageUrl": "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?auto=format&fit=crop&w=800&q=60",
-        "title": "今日热榜 No.4 - Minimalist",
-        "brief": "由 Art Sense 自动化引擎实时捕捉的审美趋势。",
-        "detailedAnalysis": "1. 视觉重心：利用对角线构图引导视线。<br>2. 质感表达：通过高对比度强调材质细节。<br>3. 色彩平衡：低饱和度色彩传递专业感。",
-        "suggestion": "建议在短视频封面尝试此类居中排版，增加点击率。"
+        "id": "女性穿搭_3_20260507",
+        "category": "女性穿搭",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?streetwear&sig=20260507女性穿搭3",
+        "title": "今日热榜 No.4 - Streetwear",
+        "brief": "捕捉全网关于【女性穿搭】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
     },
     {
-        "id": "top_4_20260507",
-        "category": "视觉灵感",
-        "imageUrl": "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=800&q=60",
-        "title": "今日热榜 No.5 - Fashion",
-        "brief": "由 Art Sense 自动化引擎实时捕捉的审美趋势。",
-        "detailedAnalysis": "1. 视觉重心：利用对角线构图引导视线。<br>2. 质感表达：通过高对比度强调材质细节。<br>3. 色彩平衡：低饱和度色彩传递专业感。",
-        "suggestion": "建议在短视频封面尝试此类居中排版，增加点击率。"
+        "id": "女性穿搭_4_20260507",
+        "category": "女性穿搭",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?minimalist-fashion&sig=20260507女性穿搭4",
+        "title": "今日热榜 No.5 - Minimalist-Fashion",
+        "brief": "捕捉全网关于【女性穿搭】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
     },
     {
-        "id": "top_5_20260507",
-        "category": "视觉灵感",
-        "imageUrl": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=60",
-        "title": "今日热榜 No.6 - Layout",
-        "brief": "由 Art Sense 自动化引擎实时捕捉的审美趋势。",
-        "detailedAnalysis": "1. 视觉重心：利用对角线构图引导视线。<br>2. 质感表达：通过高对比度强调材质细节。<br>3. 色彩平衡：低饱和度色彩传递专业感。",
-        "suggestion": "建议在短视频封面尝试此类居中排版，增加点击率。"
+        "id": "女性穿搭_5_20260507",
+        "category": "女性穿搭",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?vogue&sig=20260507女性穿搭5",
+        "title": "今日热榜 No.6 - Vogue",
+        "brief": "捕捉全网关于【女性穿搭】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
     },
     {
-        "id": "top_6_20260507",
-        "category": "视觉灵感",
-        "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=60",
-        "title": "今日热榜 No.7 - Interior",
-        "brief": "由 Art Sense 自动化引擎实时捕捉的审美趋势。",
-        "detailedAnalysis": "1. 视觉重心：利用对角线构图引导视线。<br>2. 质感表达：通过高对比度强调材质细节。<br>3. 色彩平衡：低饱和度色彩传递专业感。",
-        "suggestion": "建议在短视频封面尝试此类居中排版，增加点击率。"
+        "id": "女性穿搭_6_20260507",
+        "category": "女性穿搭",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?outfit&sig=20260507女性穿搭6",
+        "title": "今日热榜 No.7 - Outfit",
+        "brief": "捕捉全网关于【女性穿搭】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
     },
     {
-        "id": "top_7_20260507",
-        "category": "视觉灵感",
-        "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=60",
-        "title": "今日热榜 No.8 - Minimalist",
-        "brief": "由 Art Sense 自动化引擎实时捕捉的审美趋势。",
-        "detailedAnalysis": "1. 视觉重心：利用对角线构图引导视线。<br>2. 质感表达：通过高对比度强调材质细节。<br>3. 色彩平衡：低饱和度色彩传递专业感。",
-        "suggestion": "建议在短视频封面尝试此类居中排版，增加点击率。"
+        "id": "女性穿搭_7_20260507",
+        "category": "女性穿搭",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?runway&sig=20260507女性穿搭7",
+        "title": "今日热榜 No.8 - Runway",
+        "brief": "捕捉全网关于【女性穿搭】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "页面排版_0_20260507",
+        "category": "页面排版",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?layout&sig=20260507页面排版0",
+        "title": "今日热榜 No.1 - Layout",
+        "brief": "捕捉全网关于【页面排版】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "页面排版_1_20260507",
+        "category": "页面排版",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?typography&sig=20260507页面排版1",
+        "title": "今日热榜 No.2 - Typography",
+        "brief": "捕捉全网关于【页面排版】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "页面排版_2_20260507",
+        "category": "页面排版",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?graphic-design&sig=20260507页面排版2",
+        "title": "今日热榜 No.3 - Graphic-Design",
+        "brief": "捕捉全网关于【页面排版】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "页面排版_3_20260507",
+        "category": "页面排版",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?poster&sig=20260507页面排版3",
+        "title": "今日热榜 No.4 - Poster",
+        "brief": "捕捉全网关于【页面排版】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "页面排版_4_20260507",
+        "category": "页面排版",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?swiss-design&sig=20260507页面排版4",
+        "title": "今日热榜 No.5 - Swiss-Design",
+        "brief": "捕捉全网关于【页面排版】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "页面排版_5_20260507",
+        "category": "页面排版",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?minimalism&sig=20260507页面排版5",
+        "title": "今日热榜 No.6 - Minimalism",
+        "brief": "捕捉全网关于【页面排版】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "页面排版_6_20260507",
+        "category": "页面排版",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?branding&sig=20260507页面排版6",
+        "title": "今日热榜 No.7 - Branding",
+        "brief": "捕捉全网关于【页面排版】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "页面排版_7_20260507",
+        "category": "页面排版",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?ui&sig=20260507页面排版7",
+        "title": "今日热榜 No.8 - Ui",
+        "brief": "捕捉全网关于【页面排版】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "家居装饰_0_20260507",
+        "category": "家居装饰",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?interior&sig=20260507家居装饰0",
+        "title": "今日热榜 No.1 - Interior",
+        "brief": "捕捉全网关于【家居装饰】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "家居装饰_1_20260507",
+        "category": "家居装饰",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?architecture&sig=20260507家居装饰1",
+        "title": "今日热榜 No.2 - Architecture",
+        "brief": "捕捉全网关于【家居装饰】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "家居装饰_2_20260507",
+        "category": "家居装饰",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?home-decor&sig=20260507家居装饰2",
+        "title": "今日热榜 No.3 - Home-Decor",
+        "brief": "捕捉全网关于【家居装饰】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "家居装饰_3_20260507",
+        "category": "家居装饰",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?minimalist-home&sig=20260507家居装饰3",
+        "title": "今日热榜 No.4 - Minimalist-Home",
+        "brief": "捕捉全网关于【家居装饰】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "家居装饰_4_20260507",
+        "category": "家居装饰",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?modern-living&sig=20260507家居装饰4",
+        "title": "今日热榜 No.5 - Modern-Living",
+        "brief": "捕捉全网关于【家居装饰】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "家居装饰_5_20260507",
+        "category": "家居装饰",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?furniture&sig=20260507家居装饰5",
+        "title": "今日热榜 No.6 - Furniture",
+        "brief": "捕捉全网关于【家居装饰】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "家居装饰_6_20260507",
+        "category": "家居装饰",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?loft&sig=20260507家居装饰6",
+        "title": "今日热榜 No.7 - Loft",
+        "brief": "捕捉全网关于【家居装饰】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
+    },
+    {
+        "id": "家居装饰_7_20260507",
+        "category": "家居装饰",
+        "imageUrl": "https://images.unsplash.com/featured/800x1000?wabi-sabi&sig=20260507家居装饰7",
+        "title": "今日热榜 No.8 - Wabi-Sabi",
+        "brief": "捕捉全网关于【家居装饰】的最高级审美趋势。",
+        "detailedAnalysis": "1. 空间秩序：严格遵循视觉层级，核心信息秒抓眼球。<br>2. 色彩逻辑：采用极简配色方案，传递理性与专业感。<br>3. 构图艺术：利用留白引导视线移动，极具高级感。",
+        "suggestion": "建议尝试此类风格的排版或穿搭，瞬间拉开与平庸的距离。"
     }
 ]
