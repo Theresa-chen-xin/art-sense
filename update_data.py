@@ -1,4 +1,5 @@
 import json
+import requests
 import datetime
 import os
 import time
@@ -7,6 +8,7 @@ import google.generativeai as genai
 # 获取环境变量中的 AI 钥匙
 GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
 genai.configure(api_key=GOOGLE_API_KEY)
+# 使用 1.5-flash 模型，速度更快
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 def analyze_pro(category, photo_id):
@@ -15,23 +17,30 @@ def analyze_pro(category, photo_id):
     prompt = f"""
     Role: 你是一位拥有 20 年经验的、风格极其客观理性的视觉艺术评论教授。
     Task: 拆解【{category}】领域的视觉标杆（图片ID: {photo_id}）。
-    要求：从底层逻辑（如黄金分割）、视觉锚点、材质细节、批判性提升四个维度拆解。必须专业且致密。
-    输出 JSON 格式（不要多余文字）：
+    
+    要求：
+    1. 严禁使用“优美”、“高级”等感性词汇，必须从技术角度切入。
+    2. 从底层逻辑（如黄金分割）、视觉锚点、材质细节、批判性提升四个维度拆解。
+    3. 内容字数约 250 字，信息密度要极高。
+    
+    输出 JSON 格式（不要任何多余文字）：
     {{
         "id": "pro_{photo_id}_{timestamp}",
         "category": "{category}",
         "imageUrl": "https://i0.wp.com/images.unsplash.com/photo-{photo_id}?w=1000&q=80",
-        "title": "学术级标题",
-        "brief": "视觉逻辑总结",
-        "detailedAnalysis": "四点技术拆解，用.<br>分割",
-        "suggestion": "小白实战建议"
+        "title": "学术级视觉分析标题",
+        "brief": "视觉逻辑核心总结",
+        "detailedAnalysis": "四点深度拆解，用.<br>分割",
+        "suggestion": "给小白的实战避坑建议"
     }}
     """
     try:
         response = model.generate_content(prompt)
+        # 清洗 AI 返回的格式
         clean_text = response.text.replace('```json', '').replace('```', '').strip()
         return json.loads(clean_text)
-    except:
+    except Exception as e:
+        print(f"AI 分析出错: {e}")
         return None
 
 def update():
@@ -45,6 +54,7 @@ def update():
     results = []
     for cat, ids in ids_map.items():
         for pid in ids:
+            print(f"AI 正在深度拆解: {cat} - {pid}")
             data = analyze_pro(cat, pid)
             if data: 
                 results.append(data)
