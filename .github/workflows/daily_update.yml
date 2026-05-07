@@ -2,8 +2,8 @@ name: Daily Top 8 Update
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天早上 8 点自动跑
-  workflow_dispatch: # 允许你手动点击按钮来测试更新
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   update-data:
@@ -13,28 +13,22 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-
       - name: Install dependencies
         run: |
           pip install requests
-          # 新增：安装调用 Gemini 需要的库
           pip install google-generativeai
-
       - name: Run update script
-        # --- 核心新增：把 GitHub Secret 注入为环境变量 ---
         env:
           GOOGLE_API_KEY: ${{ secrets.GEMINI_KEY }}
         run: python update_data.py
-
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add aesthetic_data.json
-          git commit -m "Auto update: Deep AI Analysis + Fixed Typography" || exit 0
+          git commit -m "Fix: System alignment for deep analysis" || exit 0
           git push
