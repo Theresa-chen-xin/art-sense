@@ -12,20 +12,17 @@
         #drawer { transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
         .drawer-open { transform: translateX(0) !important; }
         .hero-bg {
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1600&q=80');
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80');
             background-size: cover; background-position: center;
         }
-        /* 导航栏选中状态 */
         .nav-active { border-bottom: 2px solid white; opacity: 1 !important; }
     </style>
 </head>
 <body class="overflow-x-hidden">
 
-    <!-- 顶部导航 -->
     <header class="bg-black text-white px-8 py-6 flex justify-between items-center fixed w-full z-30">
         <div class="font-serif text-2xl tracking-tighter">Art Sense Levelup.</div>
-        <!-- 💡 修复：加入了 onclick 过滤功能 -->
-        <nav class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] italic" id="main-nav">
+        <nav class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] italic">
             <button onclick="filterCategory('All')" class="nav-btn nav-active pb-1 opacity-60 hover:opacity-100 transition-opacity" data-cat="All">discover</button>
             <button onclick="filterCategory('女性穿搭')" class="nav-btn pb-1 opacity-60 hover:opacity-100 transition-opacity" data-cat="女性穿搭">fashion</button>
             <button onclick="filterCategory('页面排版')" class="nav-btn pb-1 opacity-60 hover:opacity-100 transition-opacity" data-cat="页面排版">layout</button>
@@ -34,7 +31,6 @@
         <button class="border border-white/30 rounded-full px-6 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">Subscribe</button>
     </header>
 
-    <!-- 巨幕 -->
     <section class="hero-bg h-[80vh] flex flex-col justify-center items-center text-center text-white px-6">
         <h2 class="font-serif text-8xl md:text-9xl mb-8 tracking-tighter animate-fade-in">Art Sense<br>Levelup.</h2>
         <p class="max-w-xl text-gray-300 text-sm leading-relaxed opacity-80 tracking-wide font-medium">
@@ -42,23 +38,16 @@
         </p>
     </section>
 
-    <!-- 画廊 -->
     <div class="max-w-7xl mx-auto py-24 px-8">
-        <div id="gallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20">
-            <!-- 脚本生成内容 -->
-        </div>
+        <div id="gallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20"></div>
     </div>
 
-    <!-- 💡 修复：超大详情页 (左图右文) -->
+    <!-- 左图右文超大抽屉 -->
     <div id="drawer" class="fixed top-0 right-0 h-full w-full md:w-[90vw] max-w-[1200px] bg-white shadow-2xl z-50 transform translate-x-full border-l border-gray-100 overflow-hidden flex flex-col">
-        <!-- 悬浮关闭按钮 -->
         <button onclick="closeDrawer()" class="absolute top-6 right-8 text-black bg-white/90 px-4 py-2 rounded-full shadow-md hover:bg-black hover:text-white uppercase text-[10px] font-bold tracking-widest flex items-center group z-50 transition-all border border-gray-100">
             <span class="mr-2 group-hover:-translate-x-1 transition-transform">←</span> Close
         </button>
-        
-        <div id="drawer-content" class="flex-1 overflow-hidden">
-            <!-- 内容填充区 -->
-        </div>
+        <div id="drawer-content" class="flex-1 overflow-hidden"></div>
     </div>
 
     <div id="overlay" class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition-opacity z-40" onclick="closeDrawer()"></div>
@@ -68,41 +57,33 @@
 
         async function init() {
             try {
-                const response = await fetch('aesthetic_data.json?t=' + new Date().getTime());
+                // 💡 核心修改：强制加上随机数，绝对不允许浏览器调用旧的缓存数据
+                const response = await fetch('aesthetic_data.json?t=' + Math.random());
                 allData = await response.json();
                 renderGallery(allData);
             } catch (e) { 
-                console.error("数据拉取失败", e);
+                console.error("加载失败", e); 
             }
         }
 
-        // 💡 修复 1：分类过滤逻辑
         function filterCategory(category) {
-            // 更新导航栏 UI
             document.querySelectorAll('.nav-btn').forEach(btn => {
                 btn.classList.remove('nav-active');
                 if(btn.dataset.cat === category) btn.classList.add('nav-active');
             });
-
-            // 过滤数据并重新渲染
             const filteredData = category === 'All' ? allData : allData.filter(item => item.category === category);
             renderGallery(filteredData);
         }
 
         function renderGallery(data) {
             const gallery = document.getElementById('gallery');
-            if(data.length === 0) {
-                gallery.innerHTML = '<p class="col-span-full text-center text-gray-400 mt-10">该分类下暂无数据，请稍后重试。</p>';
-                return;
-            }
+            if(data.length === 0) return;
 
+            // 💡 核心修改：彻底删除了 onerror 替身机制
             gallery.innerHTML = data.map(item => `
                 <div class="group cursor-pointer flex flex-col h-full" onclick="openDrawer('${item.id}')">
                     <div class="aspect-[4/5] overflow-hidden rounded-sm bg-gray-100 mb-6 shadow-sm">
-                        <img src="${item.imageUrl}" 
-                             onerror="this.src='https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&q=80'" 
-                             loading="lazy" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[0.2] group-hover:grayscale-0">
+                        <img src="${item.imageUrl}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[0.2] group-hover:grayscale-0">
                     </div>
                     <div class="text-center flex-1 flex flex-col justify-between">
                         <div>
@@ -115,7 +96,6 @@
             `).join('');
         }
 
-        // 💡 修复 2：左图右文的双栏布局
         function openDrawer(id) {
             const item = allData.find(d => d.id === id);
             if (!item) return;
@@ -123,28 +103,22 @@
             const content = document.getElementById('drawer-content');
             content.innerHTML = `
                 <div class="flex flex-col md:flex-row h-full">
-                    <!-- 左侧图片区 (占用 50%) -->
                     <div class="w-full md:w-1/2 h-[40vh] md:h-full bg-gray-50 flex items-center justify-center p-8 border-r border-gray-100 relative">
                         <img src="${item.imageUrl}" class="max-w-full max-h-full object-contain shadow-2xl rounded-sm">
                     </div>
-                    
-                    <!-- 右侧文本解析区 (占用 50%) -->
                     <div class="w-full md:w-1/2 h-[60vh] md:h-full overflow-y-auto px-10 py-16 md:px-16 md:py-20 bg-white">
                         <div class="flex items-center space-x-4 mb-8 text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">
                             <span>${item.category}</span>
                             <span class="w-1 h-1 bg-gray-200 rounded-full"></span>
                             <span class="text-black">Objective Analysis</span>
                         </div>
-                        
                         <h2 class="font-serif text-4xl font-bold mb-10 leading-tight">${item.title}</h2>
-                        
                         <div class="prose prose-sm max-w-none text-gray-800">
                             ${item.detailedAnalysis}
                         </div>
                     </div>
                 </div>
             `;
-
             document.getElementById('drawer').classList.add('drawer-open');
             document.getElementById('overlay').classList.replace('opacity-0', 'opacity-100');
             document.getElementById('overlay').classList.replace('pointer-events-none', 'pointer-events-auto');
