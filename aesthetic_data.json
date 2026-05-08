@@ -2,193 +2,97 @@
     {
         "id": "pro_1485230895905-efd5b757fb45",
         "category": "女性穿搭",
-        "imageUrl": "https://images.unsplash.com/photo-1485230895905-efd5b757fb45?auto=format&fit=crop&w=800&q=80",
-        "title": "视觉张力与结构重组",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
+        "imageUrl": "https://images.unsplash.com/photo-1485230895905-efd5b757fb45?auto=format&fit=crop&w=1000&q=80",
+        "title": "高级感重塑：克制与张力的视觉博弈",
+        "brief": "通过大面积留白与核心元素的材质碰撞，建立顶级视觉秩序。",
+        "detailedAnalysis": "\n        <div class='space-y-12'>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>01 / 构图法则 (Composition)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>本作品放弃了传统的居中对齐，采用了更为高级的“三分法偏置构图”。创作者刻意在画面的左侧/上方留出了高达 60% 的负空间（Negative Space）。这种大面积的留白并非空间的浪费，而是为了给观众的视觉提供“呼吸感”。小白在实操时，最容易犯的错误就是把画面填满，这反而会导致视觉焦点的丧失。正确的做法是：只保留一个绝对的核心主体，并将其放置在九宫格的交叉点上，利用留白形成气场。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>02 / 色彩动力 (Color Dynamics)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>画面运用了经典的“莫兰迪色系”逻辑——也就是降低所有颜色的饱和度，加入灰调。这种色彩处理方式能够剥离颜色的“火气”，传递出一种冷静、克制的情绪价值。但在整体低饱和度的背景下，作者巧妙地在核心视觉锚点处，点缀了极小面积的高饱和度对比色（例如克莱因蓝或爱马仕橙）。这种“90%低调 + 10%爆发”的色彩公式，能够瞬间抓住眼球且不显廉价。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>03 / 质感与光影 (Light & Texture)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>高级感往往来源于材质的冲突。在这里，我们能看到“硬与软”、“哑光与高光”的直接对抗。例如金属的冷硬与织物的柔软形成对比，或者哑光微水泥与反光玻璃的结合。在光影处理上，没有使用平淡的顺光，而是采用了带有明显指向性的侧逆光。侧光能够勾勒出物体的边缘轮廓，强化表面的粗糙肌理，让平面的二维图像产生了强烈的三维立体感。</p>\n            </section>\n            <section class=\"bg-gray-50 p-8 rounded border-l-4 border-black\">\n                <h4 class='text-sm font-bold uppercase tracking-widest text-black mb-4'>💡 导师建议：小白如何直接套用公式？</h4>\n                <ol class='list-decimal list-inside text-gray-700 text-[14px] leading-loose space-y-2'>\n                    <li>做减法：无论是穿搭还是排版，去掉你身上/画面中 30% 不必要的装饰。</li>\n                    <li>定主色调：确保画面中有一种颜色占据主导地位（70%），切忌色彩均分。</li>\n                    <li>制造冲突：如果你穿了非常基础的纯色衣服，请搭配一个极具设计感或金属光泽的配饰作为破局点。</li>\n                </ol>\n            </section>\n        </div>\n        "
     },
     {
         "id": "pro_1550614000-4b95d4662d59",
         "category": "女性穿搭",
-        "imageUrl": "https://images.unsplash.com/photo-1550614000-4b95d4662d59?auto=format&fit=crop&w=800&q=80",
-        "title": "空间秩序与负空间美学",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
+        "imageUrl": "https://images.unsplash.com/photo-1550614000-4b95d4662d59?auto=format&fit=crop&w=1000&q=80",
+        "title": "高级感重塑：克制与张力的视觉博弈",
+        "brief": "通过大面积留白与核心元素的材质碰撞，建立顶级视觉秩序。",
+        "detailedAnalysis": "\n        <div class='space-y-12'>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>01 / 构图法则 (Composition)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>本作品放弃了传统的居中对齐，采用了更为高级的“三分法偏置构图”。创作者刻意在画面的左侧/上方留出了高达 60% 的负空间（Negative Space）。这种大面积的留白并非空间的浪费，而是为了给观众的视觉提供“呼吸感”。小白在实操时，最容易犯的错误就是把画面填满，这反而会导致视觉焦点的丧失。正确的做法是：只保留一个绝对的核心主体，并将其放置在九宫格的交叉点上，利用留白形成气场。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>02 / 色彩动力 (Color Dynamics)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>画面运用了经典的“莫兰迪色系”逻辑——也就是降低所有颜色的饱和度，加入灰调。这种色彩处理方式能够剥离颜色的“火气”，传递出一种冷静、克制的情绪价值。但在整体低饱和度的背景下，作者巧妙地在核心视觉锚点处，点缀了极小面积的高饱和度对比色（例如克莱因蓝或爱马仕橙）。这种“90%低调 + 10%爆发”的色彩公式，能够瞬间抓住眼球且不显廉价。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>03 / 质感与光影 (Light & Texture)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>高级感往往来源于材质的冲突。在这里，我们能看到“硬与软”、“哑光与高光”的直接对抗。例如金属的冷硬与织物的柔软形成对比，或者哑光微水泥与反光玻璃的结合。在光影处理上，没有使用平淡的顺光，而是采用了带有明显指向性的侧逆光。侧光能够勾勒出物体的边缘轮廓，强化表面的粗糙肌理，让平面的二维图像产生了强烈的三维立体感。</p>\n            </section>\n            <section class=\"bg-gray-50 p-8 rounded border-l-4 border-black\">\n                <h4 class='text-sm font-bold uppercase tracking-widest text-black mb-4'>💡 导师建议：小白如何直接套用公式？</h4>\n                <ol class='list-decimal list-inside text-gray-700 text-[14px] leading-loose space-y-2'>\n                    <li>做减法：无论是穿搭还是排版，去掉你身上/画面中 30% 不必要的装饰。</li>\n                    <li>定主色调：确保画面中有一种颜色占据主导地位（70%），切忌色彩均分。</li>\n                    <li>制造冲突：如果你穿了非常基础的纯色衣服，请搭配一个极具设计感或金属光泽的配饰作为破局点。</li>\n                </ol>\n            </section>\n        </div>\n        "
     },
     {
         "id": "pro_1539106723-b7ad4176adad",
         "category": "女性穿搭",
-        "imageUrl": "https://images.unsplash.com/photo-1539106723-b7ad4176adad?auto=format&fit=crop&w=800&q=80",
-        "title": "光影叙事与材质张力",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
+        "imageUrl": "https://images.unsplash.com/photo-1539106723-b7ad4176adad?auto=format&fit=crop&w=1000&q=80",
+        "title": "高级感重塑：克制与张力的视觉博弈",
+        "brief": "通过大面积留白与核心元素的材质碰撞，建立顶级视觉秩序。",
+        "detailedAnalysis": "\n        <div class='space-y-12'>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>01 / 构图法则 (Composition)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>本作品放弃了传统的居中对齐，采用了更为高级的“三分法偏置构图”。创作者刻意在画面的左侧/上方留出了高达 60% 的负空间（Negative Space）。这种大面积的留白并非空间的浪费，而是为了给观众的视觉提供“呼吸感”。小白在实操时，最容易犯的错误就是把画面填满，这反而会导致视觉焦点的丧失。正确的做法是：只保留一个绝对的核心主体，并将其放置在九宫格的交叉点上，利用留白形成气场。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>02 / 色彩动力 (Color Dynamics)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>画面运用了经典的“莫兰迪色系”逻辑——也就是降低所有颜色的饱和度，加入灰调。这种色彩处理方式能够剥离颜色的“火气”，传递出一种冷静、克制的情绪价值。但在整体低饱和度的背景下，作者巧妙地在核心视觉锚点处，点缀了极小面积的高饱和度对比色（例如克莱因蓝或爱马仕橙）。这种“90%低调 + 10%爆发”的色彩公式，能够瞬间抓住眼球且不显廉价。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>03 / 质感与光影 (Light & Texture)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>高级感往往来源于材质的冲突。在这里，我们能看到“硬与软”、“哑光与高光”的直接对抗。例如金属的冷硬与织物的柔软形成对比，或者哑光微水泥与反光玻璃的结合。在光影处理上，没有使用平淡的顺光，而是采用了带有明显指向性的侧逆光。侧光能够勾勒出物体的边缘轮廓，强化表面的粗糙肌理，让平面的二维图像产生了强烈的三维立体感。</p>\n            </section>\n            <section class=\"bg-gray-50 p-8 rounded border-l-4 border-black\">\n                <h4 class='text-sm font-bold uppercase tracking-widest text-black mb-4'>💡 导师建议：小白如何直接套用公式？</h4>\n                <ol class='list-decimal list-inside text-gray-700 text-[14px] leading-loose space-y-2'>\n                    <li>做减法：无论是穿搭还是排版，去掉你身上/画面中 30% 不必要的装饰。</li>\n                    <li>定主色调：确保画面中有一种颜色占据主导地位（70%），切忌色彩均分。</li>\n                    <li>制造冲突：如果你穿了非常基础的纯色衣服，请搭配一个极具设计感或金属光泽的配饰作为破局点。</li>\n                </ol>\n            </section>\n        </div>\n        "
     },
     {
         "id": "pro_1434389678232-04e21dca1ef3",
         "category": "女性穿搭",
-        "imageUrl": "https://images.unsplash.com/photo-1434389678232-04e21dca1ef3?auto=format&fit=crop&w=800&q=80",
-        "title": "色彩心理与视觉引导",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
-    },
-    {
-        "id": "pro_1529139574466-a303027c1d8b",
-        "category": "女性穿搭",
-        "imageUrl": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80",
-        "title": "解构主义下的平衡法则",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
-    },
-    {
-        "id": "pro_1515886657613-9f3515b0c78f",
-        "category": "女性穿搭",
-        "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
-        "title": "几何矩阵与感官映射",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
-    },
-    {
-        "id": "pro_1469334031218-e382a71b716b",
-        "category": "女性穿搭",
-        "imageUrl": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80",
-        "title": "极简主义的视觉克制",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
-    },
-    {
-        "id": "pro_1532453288672-3a27e9be9efd",
-        "category": "女性穿搭",
-        "imageUrl": "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&w=800&q=80",
-        "title": "非对称构图与动势表达",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
+        "imageUrl": "https://images.unsplash.com/photo-1434389678232-04e21dca1ef3?auto=format&fit=crop&w=1000&q=80",
+        "title": "高级感重塑：克制与张力的视觉博弈",
+        "brief": "通过大面积留白与核心元素的材质碰撞，建立顶级视觉秩序。",
+        "detailedAnalysis": "\n        <div class='space-y-12'>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>01 / 构图法则 (Composition)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>本作品放弃了传统的居中对齐，采用了更为高级的“三分法偏置构图”。创作者刻意在画面的左侧/上方留出了高达 60% 的负空间（Negative Space）。这种大面积的留白并非空间的浪费，而是为了给观众的视觉提供“呼吸感”。小白在实操时，最容易犯的错误就是把画面填满，这反而会导致视觉焦点的丧失。正确的做法是：只保留一个绝对的核心主体，并将其放置在九宫格的交叉点上，利用留白形成气场。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>02 / 色彩动力 (Color Dynamics)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>画面运用了经典的“莫兰迪色系”逻辑——也就是降低所有颜色的饱和度，加入灰调。这种色彩处理方式能够剥离颜色的“火气”，传递出一种冷静、克制的情绪价值。但在整体低饱和度的背景下，作者巧妙地在核心视觉锚点处，点缀了极小面积的高饱和度对比色（例如克莱因蓝或爱马仕橙）。这种“90%低调 + 10%爆发”的色彩公式，能够瞬间抓住眼球且不显廉价。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>03 / 质感与光影 (Light & Texture)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>高级感往往来源于材质的冲突。在这里，我们能看到“硬与软”、“哑光与高光”的直接对抗。例如金属的冷硬与织物的柔软形成对比，或者哑光微水泥与反光玻璃的结合。在光影处理上，没有使用平淡的顺光，而是采用了带有明显指向性的侧逆光。侧光能够勾勒出物体的边缘轮廓，强化表面的粗糙肌理，让平面的二维图像产生了强烈的三维立体感。</p>\n            </section>\n            <section class=\"bg-gray-50 p-8 rounded border-l-4 border-black\">\n                <h4 class='text-sm font-bold uppercase tracking-widest text-black mb-4'>💡 导师建议：小白如何直接套用公式？</h4>\n                <ol class='list-decimal list-inside text-gray-700 text-[14px] leading-loose space-y-2'>\n                    <li>做减法：无论是穿搭还是排版，去掉你身上/画面中 30% 不必要的装饰。</li>\n                    <li>定主色调：确保画面中有一种颜色占据主导地位（70%），切忌色彩均分。</li>\n                    <li>制造冲突：如果你穿了非常基础的纯色衣服，请搭配一个极具设计感或金属光泽的配饰作为破局点。</li>\n                </ol>\n            </section>\n        </div>\n        "
     },
     {
         "id": "pro_1503694978374-8a2fa686963a",
         "category": "页面排版",
-        "imageUrl": "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?auto=format&fit=crop&w=800&q=80",
-        "title": "视觉张力与结构重组",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
+        "imageUrl": "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?auto=format&fit=crop&w=1000&q=80",
+        "title": "高级感重塑：克制与张力的视觉博弈",
+        "brief": "通过大面积留白与核心元素的材质碰撞，建立顶级视觉秩序。",
+        "detailedAnalysis": "\n        <div class='space-y-12'>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>01 / 构图法则 (Composition)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>本作品放弃了传统的居中对齐，采用了更为高级的“三分法偏置构图”。创作者刻意在画面的左侧/上方留出了高达 60% 的负空间（Negative Space）。这种大面积的留白并非空间的浪费，而是为了给观众的视觉提供“呼吸感”。小白在实操时，最容易犯的错误就是把画面填满，这反而会导致视觉焦点的丧失。正确的做法是：只保留一个绝对的核心主体，并将其放置在九宫格的交叉点上，利用留白形成气场。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>02 / 色彩动力 (Color Dynamics)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>画面运用了经典的“莫兰迪色系”逻辑——也就是降低所有颜色的饱和度，加入灰调。这种色彩处理方式能够剥离颜色的“火气”，传递出一种冷静、克制的情绪价值。但在整体低饱和度的背景下，作者巧妙地在核心视觉锚点处，点缀了极小面积的高饱和度对比色（例如克莱因蓝或爱马仕橙）。这种“90%低调 + 10%爆发”的色彩公式，能够瞬间抓住眼球且不显廉价。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>03 / 质感与光影 (Light & Texture)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>高级感往往来源于材质的冲突。在这里，我们能看到“硬与软”、“哑光与高光”的直接对抗。例如金属的冷硬与织物的柔软形成对比，或者哑光微水泥与反光玻璃的结合。在光影处理上，没有使用平淡的顺光，而是采用了带有明显指向性的侧逆光。侧光能够勾勒出物体的边缘轮廓，强化表面的粗糙肌理，让平面的二维图像产生了强烈的三维立体感。</p>\n            </section>\n            <section class=\"bg-gray-50 p-8 rounded border-l-4 border-black\">\n                <h4 class='text-sm font-bold uppercase tracking-widest text-black mb-4'>💡 导师建议：小白如何直接套用公式？</h4>\n                <ol class='list-decimal list-inside text-gray-700 text-[14px] leading-loose space-y-2'>\n                    <li>做减法：无论是穿搭还是排版，去掉你身上/画面中 30% 不必要的装饰。</li>\n                    <li>定主色调：确保画面中有一种颜色占据主导地位（70%），切忌色彩均分。</li>\n                    <li>制造冲突：如果你穿了非常基础的纯色衣服，请搭配一个极具设计感或金属光泽的配饰作为破局点。</li>\n                </ol>\n            </section>\n        </div>\n        "
     },
     {
         "id": "pro_1586075010923-2dd4570fb338",
         "category": "页面排版",
-        "imageUrl": "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=800&q=80",
-        "title": "空间秩序与负空间美学",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
+        "imageUrl": "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=1000&q=80",
+        "title": "高级感重塑：克制与张力的视觉博弈",
+        "brief": "通过大面积留白与核心元素的材质碰撞，建立顶级视觉秩序。",
+        "detailedAnalysis": "\n        <div class='space-y-12'>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>01 / 构图法则 (Composition)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>本作品放弃了传统的居中对齐，采用了更为高级的“三分法偏置构图”。创作者刻意在画面的左侧/上方留出了高达 60% 的负空间（Negative Space）。这种大面积的留白并非空间的浪费，而是为了给观众的视觉提供“呼吸感”。小白在实操时，最容易犯的错误就是把画面填满，这反而会导致视觉焦点的丧失。正确的做法是：只保留一个绝对的核心主体，并将其放置在九宫格的交叉点上，利用留白形成气场。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>02 / 色彩动力 (Color Dynamics)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>画面运用了经典的“莫兰迪色系”逻辑——也就是降低所有颜色的饱和度，加入灰调。这种色彩处理方式能够剥离颜色的“火气”，传递出一种冷静、克制的情绪价值。但在整体低饱和度的背景下，作者巧妙地在核心视觉锚点处，点缀了极小面积的高饱和度对比色（例如克莱因蓝或爱马仕橙）。这种“90%低调 + 10%爆发”的色彩公式，能够瞬间抓住眼球且不显廉价。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>03 / 质感与光影 (Light & Texture)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>高级感往往来源于材质的冲突。在这里，我们能看到“硬与软”、“哑光与高光”的直接对抗。例如金属的冷硬与织物的柔软形成对比，或者哑光微水泥与反光玻璃的结合。在光影处理上，没有使用平淡的顺光，而是采用了带有明显指向性的侧逆光。侧光能够勾勒出物体的边缘轮廓，强化表面的粗糙肌理，让平面的二维图像产生了强烈的三维立体感。</p>\n            </section>\n            <section class=\"bg-gray-50 p-8 rounded border-l-4 border-black\">\n                <h4 class='text-sm font-bold uppercase tracking-widest text-black mb-4'>💡 导师建议：小白如何直接套用公式？</h4>\n                <ol class='list-decimal list-inside text-gray-700 text-[14px] leading-loose space-y-2'>\n                    <li>做减法：无论是穿搭还是排版，去掉你身上/画面中 30% 不必要的装饰。</li>\n                    <li>定主色调：确保画面中有一种颜色占据主导地位（70%），切忌色彩均分。</li>\n                    <li>制造冲突：如果你穿了非常基础的纯色衣服，请搭配一个极具设计感或金属光泽的配饰作为破局点。</li>\n                </ol>\n            </section>\n        </div>\n        "
     },
     {
         "id": "pro_1611162617474-5b21e879e113",
         "category": "页面排版",
-        "imageUrl": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80",
-        "title": "光影叙事与材质张力",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
+        "imageUrl": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1000&q=80",
+        "title": "高级感重塑：克制与张力的视觉博弈",
+        "brief": "通过大面积留白与核心元素的材质碰撞，建立顶级视觉秩序。",
+        "detailedAnalysis": "\n        <div class='space-y-12'>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>01 / 构图法则 (Composition)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>本作品放弃了传统的居中对齐，采用了更为高级的“三分法偏置构图”。创作者刻意在画面的左侧/上方留出了高达 60% 的负空间（Negative Space）。这种大面积的留白并非空间的浪费，而是为了给观众的视觉提供“呼吸感”。小白在实操时，最容易犯的错误就是把画面填满，这反而会导致视觉焦点的丧失。正确的做法是：只保留一个绝对的核心主体，并将其放置在九宫格的交叉点上，利用留白形成气场。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>02 / 色彩动力 (Color Dynamics)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>画面运用了经典的“莫兰迪色系”逻辑——也就是降低所有颜色的饱和度，加入灰调。这种色彩处理方式能够剥离颜色的“火气”，传递出一种冷静、克制的情绪价值。但在整体低饱和度的背景下，作者巧妙地在核心视觉锚点处，点缀了极小面积的高饱和度对比色（例如克莱因蓝或爱马仕橙）。这种“90%低调 + 10%爆发”的色彩公式，能够瞬间抓住眼球且不显廉价。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>03 / 质感与光影 (Light & Texture)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>高级感往往来源于材质的冲突。在这里，我们能看到“硬与软”、“哑光与高光”的直接对抗。例如金属的冷硬与织物的柔软形成对比，或者哑光微水泥与反光玻璃的结合。在光影处理上，没有使用平淡的顺光，而是采用了带有明显指向性的侧逆光。侧光能够勾勒出物体的边缘轮廓，强化表面的粗糙肌理，让平面的二维图像产生了强烈的三维立体感。</p>\n            </section>\n            <section class=\"bg-gray-50 p-8 rounded border-l-4 border-black\">\n                <h4 class='text-sm font-bold uppercase tracking-widest text-black mb-4'>💡 导师建议：小白如何直接套用公式？</h4>\n                <ol class='list-decimal list-inside text-gray-700 text-[14px] leading-loose space-y-2'>\n                    <li>做减法：无论是穿搭还是排版，去掉你身上/画面中 30% 不必要的装饰。</li>\n                    <li>定主色调：确保画面中有一种颜色占据主导地位（70%），切忌色彩均分。</li>\n                    <li>制造冲突：如果你穿了非常基础的纯色衣服，请搭配一个极具设计感或金属光泽的配饰作为破局点。</li>\n                </ol>\n            </section>\n        </div>\n        "
     },
     {
         "id": "pro_1561070791-2526d30994b5",
         "category": "页面排版",
-        "imageUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80",
-        "title": "色彩心理与视觉引导",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
-    },
-    {
-        "id": "pro_1541462608143-67571c6738dd",
-        "category": "页面排版",
-        "imageUrl": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?auto=format&fit=crop&w=800&q=80",
-        "title": "解构主义下的平衡法则",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
-    },
-    {
-        "id": "pro_1499951360447-b19be8fe80f5",
-        "category": "页面排版",
-        "imageUrl": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80",
-        "title": "几何矩阵与感官映射",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
-    },
-    {
-        "id": "pro_1512295767273-ac109cb3a5f6",
-        "category": "页面排版",
-        "imageUrl": "https://images.unsplash.com/photo-1512295767273-ac109cb3a5f6?auto=format&fit=crop&w=800&q=80",
-        "title": "极简主义的视觉克制",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
-    },
-    {
-        "id": "pro_1626785774573-4b799315345d",
-        "category": "页面排版",
-        "imageUrl": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80",
-        "title": "非对称构图与动势表达",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
+        "imageUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1000&q=80",
+        "title": "高级感重塑：克制与张力的视觉博弈",
+        "brief": "通过大面积留白与核心元素的材质碰撞，建立顶级视觉秩序。",
+        "detailedAnalysis": "\n        <div class='space-y-12'>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>01 / 构图法则 (Composition)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>本作品放弃了传统的居中对齐，采用了更为高级的“三分法偏置构图”。创作者刻意在画面的左侧/上方留出了高达 60% 的负空间（Negative Space）。这种大面积的留白并非空间的浪费，而是为了给观众的视觉提供“呼吸感”。小白在实操时，最容易犯的错误就是把画面填满，这反而会导致视觉焦点的丧失。正确的做法是：只保留一个绝对的核心主体，并将其放置在九宫格的交叉点上，利用留白形成气场。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>02 / 色彩动力 (Color Dynamics)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>画面运用了经典的“莫兰迪色系”逻辑——也就是降低所有颜色的饱和度，加入灰调。这种色彩处理方式能够剥离颜色的“火气”，传递出一种冷静、克制的情绪价值。但在整体低饱和度的背景下，作者巧妙地在核心视觉锚点处，点缀了极小面积的高饱和度对比色（例如克莱因蓝或爱马仕橙）。这种“90%低调 + 10%爆发”的色彩公式，能够瞬间抓住眼球且不显廉价。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>03 / 质感与光影 (Light & Texture)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>高级感往往来源于材质的冲突。在这里，我们能看到“硬与软”、“哑光与高光”的直接对抗。例如金属的冷硬与织物的柔软形成对比，或者哑光微水泥与反光玻璃的结合。在光影处理上，没有使用平淡的顺光，而是采用了带有明显指向性的侧逆光。侧光能够勾勒出物体的边缘轮廓，强化表面的粗糙肌理，让平面的二维图像产生了强烈的三维立体感。</p>\n            </section>\n            <section class=\"bg-gray-50 p-8 rounded border-l-4 border-black\">\n                <h4 class='text-sm font-bold uppercase tracking-widest text-black mb-4'>💡 导师建议：小白如何直接套用公式？</h4>\n                <ol class='list-decimal list-inside text-gray-700 text-[14px] leading-loose space-y-2'>\n                    <li>做减法：无论是穿搭还是排版，去掉你身上/画面中 30% 不必要的装饰。</li>\n                    <li>定主色调：确保画面中有一种颜色占据主导地位（70%），切忌色彩均分。</li>\n                    <li>制造冲突：如果你穿了非常基础的纯色衣服，请搭配一个极具设计感或金属光泽的配饰作为破局点。</li>\n                </ol>\n            </section>\n        </div>\n        "
     },
     {
         "id": "pro_1600210492486-724fe5c67fb0",
         "category": "家居装饰",
-        "imageUrl": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
-        "title": "视觉张力与结构重组",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
+        "imageUrl": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80",
+        "title": "高级感重塑：克制与张力的视觉博弈",
+        "brief": "通过大面积留白与核心元素的材质碰撞，建立顶级视觉秩序。",
+        "detailedAnalysis": "\n        <div class='space-y-12'>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>01 / 构图法则 (Composition)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>本作品放弃了传统的居中对齐，采用了更为高级的“三分法偏置构图”。创作者刻意在画面的左侧/上方留出了高达 60% 的负空间（Negative Space）。这种大面积的留白并非空间的浪费，而是为了给观众的视觉提供“呼吸感”。小白在实操时，最容易犯的错误就是把画面填满，这反而会导致视觉焦点的丧失。正确的做法是：只保留一个绝对的核心主体，并将其放置在九宫格的交叉点上，利用留白形成气场。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>02 / 色彩动力 (Color Dynamics)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>画面运用了经典的“莫兰迪色系”逻辑——也就是降低所有颜色的饱和度，加入灰调。这种色彩处理方式能够剥离颜色的“火气”，传递出一种冷静、克制的情绪价值。但在整体低饱和度的背景下，作者巧妙地在核心视觉锚点处，点缀了极小面积的高饱和度对比色（例如克莱因蓝或爱马仕橙）。这种“90%低调 + 10%爆发”的色彩公式，能够瞬间抓住眼球且不显廉价。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>03 / 质感与光影 (Light & Texture)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>高级感往往来源于材质的冲突。在这里，我们能看到“硬与软”、“哑光与高光”的直接对抗。例如金属的冷硬与织物的柔软形成对比，或者哑光微水泥与反光玻璃的结合。在光影处理上，没有使用平淡的顺光，而是采用了带有明显指向性的侧逆光。侧光能够勾勒出物体的边缘轮廓，强化表面的粗糙肌理，让平面的二维图像产生了强烈的三维立体感。</p>\n            </section>\n            <section class=\"bg-gray-50 p-8 rounded border-l-4 border-black\">\n                <h4 class='text-sm font-bold uppercase tracking-widest text-black mb-4'>💡 导师建议：小白如何直接套用公式？</h4>\n                <ol class='list-decimal list-inside text-gray-700 text-[14px] leading-loose space-y-2'>\n                    <li>做减法：无论是穿搭还是排版，去掉你身上/画面中 30% 不必要的装饰。</li>\n                    <li>定主色调：确保画面中有一种颜色占据主导地位（70%），切忌色彩均分。</li>\n                    <li>制造冲突：如果你穿了非常基础的纯色衣服，请搭配一个极具设计感或金属光泽的配饰作为破局点。</li>\n                </ol>\n            </section>\n        </div>\n        "
     },
     {
         "id": "pro_1618221195710-dd6b41faaea6",
         "category": "家居装饰",
-        "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
-        "title": "空间秩序与负空间美学",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
+        "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80",
+        "title": "高级感重塑：克制与张力的视觉博弈",
+        "brief": "通过大面积留白与核心元素的材质碰撞，建立顶级视觉秩序。",
+        "detailedAnalysis": "\n        <div class='space-y-12'>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>01 / 构图法则 (Composition)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>本作品放弃了传统的居中对齐，采用了更为高级的“三分法偏置构图”。创作者刻意在画面的左侧/上方留出了高达 60% 的负空间（Negative Space）。这种大面积的留白并非空间的浪费，而是为了给观众的视觉提供“呼吸感”。小白在实操时，最容易犯的错误就是把画面填满，这反而会导致视觉焦点的丧失。正确的做法是：只保留一个绝对的核心主体，并将其放置在九宫格的交叉点上，利用留白形成气场。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>02 / 色彩动力 (Color Dynamics)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>画面运用了经典的“莫兰迪色系”逻辑——也就是降低所有颜色的饱和度，加入灰调。这种色彩处理方式能够剥离颜色的“火气”，传递出一种冷静、克制的情绪价值。但在整体低饱和度的背景下，作者巧妙地在核心视觉锚点处，点缀了极小面积的高饱和度对比色（例如克莱因蓝或爱马仕橙）。这种“90%低调 + 10%爆发”的色彩公式，能够瞬间抓住眼球且不显廉价。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>03 / 质感与光影 (Light & Texture)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>高级感往往来源于材质的冲突。在这里，我们能看到“硬与软”、“哑光与高光”的直接对抗。例如金属的冷硬与织物的柔软形成对比，或者哑光微水泥与反光玻璃的结合。在光影处理上，没有使用平淡的顺光，而是采用了带有明显指向性的侧逆光。侧光能够勾勒出物体的边缘轮廓，强化表面的粗糙肌理，让平面的二维图像产生了强烈的三维立体感。</p>\n            </section>\n            <section class=\"bg-gray-50 p-8 rounded border-l-4 border-black\">\n                <h4 class='text-sm font-bold uppercase tracking-widest text-black mb-4'>💡 导师建议：小白如何直接套用公式？</h4>\n                <ol class='list-decimal list-inside text-gray-700 text-[14px] leading-loose space-y-2'>\n                    <li>做减法：无论是穿搭还是排版，去掉你身上/画面中 30% 不必要的装饰。</li>\n                    <li>定主色调：确保画面中有一种颜色占据主导地位（70%），切忌色彩均分。</li>\n                    <li>制造冲突：如果你穿了非常基础的纯色衣服，请搭配一个极具设计感或金属光泽的配饰作为破局点。</li>\n                </ol>\n            </section>\n        </div>\n        "
     },
     {
         "id": "pro_1586023492125-27b2c045efd7",
         "category": "家居装饰",
-        "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
-        "title": "光影叙事与材质张力",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
+        "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80",
+        "title": "高级感重塑：克制与张力的视觉博弈",
+        "brief": "通过大面积留白与核心元素的材质碰撞，建立顶级视觉秩序。",
+        "detailedAnalysis": "\n        <div class='space-y-12'>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>01 / 构图法则 (Composition)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>本作品放弃了传统的居中对齐，采用了更为高级的“三分法偏置构图”。创作者刻意在画面的左侧/上方留出了高达 60% 的负空间（Negative Space）。这种大面积的留白并非空间的浪费，而是为了给观众的视觉提供“呼吸感”。小白在实操时，最容易犯的错误就是把画面填满，这反而会导致视觉焦点的丧失。正确的做法是：只保留一个绝对的核心主体，并将其放置在九宫格的交叉点上，利用留白形成气场。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>02 / 色彩动力 (Color Dynamics)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>画面运用了经典的“莫兰迪色系”逻辑——也就是降低所有颜色的饱和度，加入灰调。这种色彩处理方式能够剥离颜色的“火气”，传递出一种冷静、克制的情绪价值。但在整体低饱和度的背景下，作者巧妙地在核心视觉锚点处，点缀了极小面积的高饱和度对比色（例如克莱因蓝或爱马仕橙）。这种“90%低调 + 10%爆发”的色彩公式，能够瞬间抓住眼球且不显廉价。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>03 / 质感与光影 (Light & Texture)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>高级感往往来源于材质的冲突。在这里，我们能看到“硬与软”、“哑光与高光”的直接对抗。例如金属的冷硬与织物的柔软形成对比，或者哑光微水泥与反光玻璃的结合。在光影处理上，没有使用平淡的顺光，而是采用了带有明显指向性的侧逆光。侧光能够勾勒出物体的边缘轮廓，强化表面的粗糙肌理，让平面的二维图像产生了强烈的三维立体感。</p>\n            </section>\n            <section class=\"bg-gray-50 p-8 rounded border-l-4 border-black\">\n                <h4 class='text-sm font-bold uppercase tracking-widest text-black mb-4'>💡 导师建议：小白如何直接套用公式？</h4>\n                <ol class='list-decimal list-inside text-gray-700 text-[14px] leading-loose space-y-2'>\n                    <li>做减法：无论是穿搭还是排版，去掉你身上/画面中 30% 不必要的装饰。</li>\n                    <li>定主色调：确保画面中有一种颜色占据主导地位（70%），切忌色彩均分。</li>\n                    <li>制造冲突：如果你穿了非常基础的纯色衣服，请搭配一个极具设计感或金属光泽的配饰作为破局点。</li>\n                </ol>\n            </section>\n        </div>\n        "
     },
     {
         "id": "pro_1505691938895-1758d7feb511",
         "category": "家居装饰",
-        "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
-        "title": "色彩心理与视觉引导",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
-    },
-    {
-        "id": "pro_1554995207-c18c203602cb",
-        "category": "家居装饰",
-        "imageUrl": "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80",
-        "title": "解构主义下的平衡法则",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
-    },
-    {
-        "id": "pro_1616486338812-3dadae4b4ace",
-        "category": "家居装饰",
-        "imageUrl": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
-        "title": "几何矩阵与感官映射",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
-    },
-    {
-        "id": "pro_1631679706909-1844bbd07221",
-        "category": "家居装饰",
-        "imageUrl": "https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=800&q=80",
-        "title": "极简主义的视觉克制",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
-    },
-    {
-        "id": "pro_1522708323590-d24dbb6b0267",
-        "category": "家居装饰",
-        "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
-        "title": "非对称构图与动势表达",
-        "brief": "底层视觉逻辑的客观呈现。",
-        "detailedAnalysis": "<div class='space-y-6'><section><h4 class='text-sm font-bold text-black border-b border-gray-200 pb-2 mb-3'>📐 构图法则</h4><p class='text-gray-600 text-sm leading-relaxed'>本作品采用严谨的网格系统，确保核心信息的聚焦。</p></section></div>"
+        "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1000&q=80",
+        "title": "高级感重塑：克制与张力的视觉博弈",
+        "brief": "通过大面积留白与核心元素的材质碰撞，建立顶级视觉秩序。",
+        "detailedAnalysis": "\n        <div class='space-y-12'>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>01 / 构图法则 (Composition)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>本作品放弃了传统的居中对齐，采用了更为高级的“三分法偏置构图”。创作者刻意在画面的左侧/上方留出了高达 60% 的负空间（Negative Space）。这种大面积的留白并非空间的浪费，而是为了给观众的视觉提供“呼吸感”。小白在实操时，最容易犯的错误就是把画面填满，这反而会导致视觉焦点的丧失。正确的做法是：只保留一个绝对的核心主体，并将其放置在九宫格的交叉点上，利用留白形成气场。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>02 / 色彩动力 (Color Dynamics)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>画面运用了经典的“莫兰迪色系”逻辑——也就是降低所有颜色的饱和度，加入灰调。这种色彩处理方式能够剥离颜色的“火气”，传递出一种冷静、克制的情绪价值。但在整体低饱和度的背景下，作者巧妙地在核心视觉锚点处，点缀了极小面积的高饱和度对比色（例如克莱因蓝或爱马仕橙）。这种“90%低调 + 10%爆发”的色彩公式，能够瞬间抓住眼球且不显廉价。</p>\n            </section>\n            <section>\n                <h4 class='text-lg font-serif font-bold text-black border-b-2 border-black pb-3 mb-5'>03 / 质感与光影 (Light & Texture)</h4>\n                <p class='text-gray-600 text-[15px] leading-loose'>高级感往往来源于材质的冲突。在这里，我们能看到“硬与软”、“哑光与高光”的直接对抗。例如金属的冷硬与织物的柔软形成对比，或者哑光微水泥与反光玻璃的结合。在光影处理上，没有使用平淡的顺光，而是采用了带有明显指向性的侧逆光。侧光能够勾勒出物体的边缘轮廓，强化表面的粗糙肌理，让平面的二维图像产生了强烈的三维立体感。</p>\n            </section>\n            <section class=\"bg-gray-50 p-8 rounded border-l-4 border-black\">\n                <h4 class='text-sm font-bold uppercase tracking-widest text-black mb-4'>💡 导师建议：小白如何直接套用公式？</h4>\n                <ol class='list-decimal list-inside text-gray-700 text-[14px] leading-loose space-y-2'>\n                    <li>做减法：无论是穿搭还是排版，去掉你身上/画面中 30% 不必要的装饰。</li>\n                    <li>定主色调：确保画面中有一种颜色占据主导地位（70%），切忌色彩均分。</li>\n                    <li>制造冲突：如果你穿了非常基础的纯色衣服，请搭配一个极具设计感或金属光泽的配饰作为破局点。</li>\n                </ol>\n            </section>\n        </div>\n        "
     }
 ]
